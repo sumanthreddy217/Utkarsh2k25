@@ -8,6 +8,8 @@ import { allEvents } from "@/data/events";
 import Navbar from "@/components/Navbar";
 import techEventIcon from "@/assets/tech-event-icon.jpg";
 import nonTechEventIcon from "@/assets/non-tech-event-icon.jpg";
+import onlineGameIcon from "@/assets/online-game-icon.jpg";
+
 
 const EventDetail = () => {
   const { id } = useParams();
@@ -32,7 +34,8 @@ const EventDetail = () => {
     );
   }
 
-  const defaultImage = event.category === "technical" ? techEventIcon : nonTechEventIcon;
+  const defaultImage = event.image ?? (event.category === "technical" ? techEventIcon : nonTechEventIcon);
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -109,11 +112,28 @@ const EventDetail = () => {
               {/* Rules */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Rules & Guidelines</CardTitle>
+                  <CardTitle>Rules & Eligibility</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
                     {event.rules.map((rule, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">{rule}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Gameplay Rules */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Event Guidelines</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {event.gamerules.map((rule, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                         <span className="text-muted-foreground">{rule}</span>
@@ -170,7 +190,7 @@ const EventDetail = () => {
                     </div>
                   </div>
                   
-                  <Button className="w-full" variant="hero">
+                  <Button className="w-full" variant="hero" onClick={() => window.open("....", "_blank")}>
                     Register Now
                   </Button>
                 </CardContent>

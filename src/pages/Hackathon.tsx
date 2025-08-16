@@ -1,0 +1,268 @@
+import React from "react";
+import { Calendar, Clock, MapPin, Users, DollarSign, Phone, Mail, UserCheck } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import hackathon from "@/assets/Hackathon.jpg"; // update path as needed
+
+const HackathonPage: React.FC = () => {
+
+  const event = {
+    title: "HackSprint",
+    description: "A 24-hour coding marthon to innovate, collaborate, and conquer real-world challenges.",
+    category: "technical",
+    fullDescription:
+      "Join us for an electrifying hackathon where innovation meets execution. Whether you're a seasoned coder or a curious beginner, this is your chance to build, collaborate, and compete for exciting prizes.",
+    rules: [
+      "Teams must consist of 2–4 members.",
+      "All code must be written during the event.",
+      "External libraries are allowed but must be declared.",
+      "Respectful conduct is mandatory.",
+    ],
+    gamerules: [],
+    prize: "₹50,000",
+    entryFee: "₹100",
+    teamSize: "2–4 members",
+    registrationDeadline: "August 30, 2025",
+    coordinator: {
+      name: "Sumanth R",
+      contact: "+91 98765 43210",
+      email: "sumanth@example.com",
+    },
+    date: "September 15, 2025",
+    time: "10:00 AM – 6:00 PM",
+    venue: "Main Auditorium, Swarnandhar College",
+  };
+
+  return (
+    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-12 mt-11">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex-1">
+            <span className="inline-block bg-blue-100 text-blue-700 font-semibold text-sm px-3 py-1 rounded-full mb-4">
+              Technical
+            </span>
+            <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white mb-3 leading-tight">
+              {event.title}
+            </h1>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+              {event.description}
+            </p>
+            <div className="flex flex-wrap gap-6 text-gray-700 dark:text-gray-200 mb-8 text-lg font-medium">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-5 h-5 text-blue-600" /> {event.date}
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-blue-600" /> {event.time}
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-blue-600" /> {event.venue}
+              </div>
+            </div>
+            <a
+              href="https://your-registration-form.com"
+              target="_blank"
+              className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
+            >
+              Register Now
+            </a>
+          </div>
+          <div className="flex-1">
+             <img
+              src={hackathon}
+              alt="Hackathon Banner"
+              className="rounded-xl shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      {/* Main Content */}
+      <section className="py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Event Details */}
+            <div className="lg:col-span-2 space-y-8">
+              {/* Description */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>About This Event</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {event.fullDescription}
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Rules */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Rules & Eligibility</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {event.rules.map((rule, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">{rule}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Game Rules */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Event Guidelines</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {event.rules.map((rule, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">{rule}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Sidebar */}
+            <div className="space-y-6">
+              {/* Registration Card */}
+              <Card className="border-primary/20">
+                <CardHeader>
+                  <CardTitle className="text-center">Entry Details</CardTitle>
+                  <CardDescription className="text-center">
+                    Secure your spot now!
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">
+                      {event.prize}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Prize Pool
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <DollarSign className="h-4 w-4 text-primary" />
+                        <span className="text-sm">Entry Fee</span>
+                      </div>
+                      <span className="font-semibold">{event.entryFee}</span>
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Users className="h-4 w-4 text-primary" />
+                        <span className="text-sm">Team Size</span>
+                      </div>
+                      <span className="font-semibold">{event.teamSize}</span>
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <UserCheck className="h-4 w-4 text-primary" />
+                        <span className="text-sm">Deadline</span>
+                      </div>
+                      <span className="font-semibold text-sm">
+                        {event.registrationDeadline}
+                      </span>
+                    </div>
+                  </div>
+
+                  <Button className="w-full" variant="hero">
+                    Register Now
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Coordinator Info */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Event Coordinator</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div>
+                    <div className="font-semibold">{event.coordinator.name}</div>
+                    <div className="text-sm text-muted-foreground">
+                      Event Coordinator
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">{event.coordinator.contact}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Mail className="h-4 w-4 text-primary" />
+                      <span className="text-sm">{event.coordinator.email}</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Quick Info */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Quick Info</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4 text-primary" />
+                    <div>
+                      <div className="font-semibold text-sm">Date</div>
+                      <div className="text-sm text-muted-foreground">
+                        {event.date}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <Clock className="h-4 w-4 text-primary" />
+                    <div>
+                      <div className="font-semibold text-sm">Time</div>
+                      <div className="text-sm text-muted-foreground">
+                        {event.time}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-primary" />
+                    <div>
+                      <div className="font-semibold text-sm">Venue</div>
+                      <div className="text-sm text-muted-foreground">
+                        {event.venue}
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  );
+};
+
+export default HackathonPage;

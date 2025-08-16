@@ -4,8 +4,9 @@ import { nonTechnicalEvents } from "@/data/events";
 
 const NonTechnicalEvents = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-indigo-50">
       <Navbar />
+
       <div className="pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-16">
@@ -16,13 +17,17 @@ const NonTechnicalEvents = () => {
               Express your creativity and showcase your talents beyond technology
             </p>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mt-6"></div>
+
+            <EventSection
+              title="All Non-Technical Events"
+              events={nonTechnicalEvents}
+              category="non-technical"
+              showViewAll={false}
+              showHeader={false}
+            />
           </div>
           
-          <EventSection
-            title="All Non-Technical Events"
-            events={nonTechnicalEvents}
-            category="non-technical"
-          />
+          
         </div>
       </div>
     </div>

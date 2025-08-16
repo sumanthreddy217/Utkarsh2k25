@@ -4,8 +4,9 @@ import { technicalEvents } from "@/data/events";
 
 const TechnicalEvents = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-indigo-50">
       <Navbar />
+
       <div className="pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-16">
@@ -16,13 +17,17 @@ const TechnicalEvents = () => {
               Challenge your technical skills and compete with the best minds in technology
             </p>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mt-6"></div>
+            
+            <EventSection
+              title="All Technical Events"
+              events={technicalEvents}
+              category="technical"
+              showViewAll={false}
+              showHeader={false}
+            />
           </div>
           
-          <EventSection
-            title="All Technical Events"
-            events={technicalEvents}
-            category="technical"
-          />
+          
         </div>
       </div>
     </div>
