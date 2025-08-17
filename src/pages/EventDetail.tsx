@@ -190,7 +190,7 @@ const EventDetail = () => {
                     </div>
                   </div>
                   
-                  <Button className="w-full" variant="hero" onClick={() => window.open("....", "_blank")}>
+                  <Button className="w-full" variant="hero" onClick={() => window.open("https://forms.gle/qBfu5Qwov2wrf3gd8", "_blank")}>
                     Register Now
                   </Button>
                 </CardContent>
