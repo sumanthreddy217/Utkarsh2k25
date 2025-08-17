@@ -64,7 +64,7 @@ const HackathonPage: React.FC = () => {
               </div>
             </div>
             <a
-              href="https://your-registration-form.com"
+              href="https://forms.gle/qBfu5Qwov2wrf3gd8"
               target="_blank"
               className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
             >
