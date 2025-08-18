@@ -4,7 +4,7 @@ import { technicalEvents } from "@/data/events";
 
 const TechnicalEvents = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-200 via-gray-100 to-indigo-200">
       <Navbar />
 
       <div className="pt-20">

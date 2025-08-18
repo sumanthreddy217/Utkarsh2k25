@@ -7,11 +7,6 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
 
-  const departments = [
-    "Information Technology", 1000,
-    "IT & CSD Students", 1000,
-  ];
-
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -27,33 +22,26 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-8">
           {/* Main Title */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold drop-shadow-lg">
               Welcome To{" "}
               <span className="bg-gradient-hero bg-clip-text text-transparent">
-                Utkarsh 2k25
+                UTKARSH 2025
               </span>
             </h1>
-            <p className="text-lg sm:text-xl lg:text-xl text-muted-foreground max-w-2xl mx-auto drop-shadow text-gray-800">
-              From Coding to Celebrating — Experience at Utkarsh 2k25, <br /> at Swarnandhra College
+            <p className="text-lg sm:text-2xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto drop-shadow text-gray-700">
+              A Three Day National Technical Fest where students can experience Tech, Creativity and Enjoyment.
             </p>
           </div>
 
           {/* Organizing Info */}
-          <div className="flex flex-wrap items-center gap-2 gap-y-2 text-muted-foreground justify-center mb-5">
-            <span className="font-semibold text-2xl text-gray-900">Organizing by:</span>
-            <div className="min-w-[220px] flex items-center text-left">
-              <TypeAnimation
-                sequence={departments}
-                wrapper="span"
-                cursor={true}
-                speed={250 as any}
-                repeat={Infinity}
-                className="text-primary font-semibold text-2xl "
-              />
+          <div className="flex flex-col flex-wrap items-center gap-2 gap-y-2 text-muted-foreground justify-center mb-5">
+            <span className="font-semibold text-2xl text-gray-900">Organizing by</span>
+            <div className=" items-center text-center text-gray-700 text-lg font-semibold md:text-2xl sm:text-xl">
+              <span className="text-3xl text-bold text-blue-700">IT Department</span> {" "} <br />Swarnandhra College of Engineeering and Technology
             </div>
           </div>
 

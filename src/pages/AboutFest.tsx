@@ -1,8 +1,16 @@
 import React from "react";
 import { FaLaptopCode, FaGamepad, FaLightbulb, FaFilm } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
-import festPoster from "@/assets/Fest Poster.jpg";
+import festPoster from "@/assets/festPoster.png";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+
+
+const departments = [
+  "IT Department", 1000,
+  "CSE - Data Science", 1000,
+];
+
 
 const AboutFest = () => {
   return (
@@ -11,35 +19,14 @@ const AboutFest = () => {
 
       <div className="max-w-6xl mx-auto py-5">
         {/* Hero Header */}
-
-        {/* <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <div className="text-center mb-16">
-            <h1 className="text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
-              Utkarsh 2k25
-            </h1>
-            <p className="mt-4 text-xl text-indigo-200 italic">
-              Ignite the Spark. Celebrate the Spirit.
-            </p>
-            <p className="mt-2 text-sm text-indigo-400">
-              Swarnandhra College of Engineering and Technology
-            </p>
-          </div>
-        </motion.div> */}
-
         <div className="text-center mb-16">
           <h1 className="text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
-            Utkarsh 2k25
+            Utkarsh 2025
           </h1>
-          <p className="mt-4 text-xl text-indigo-200 italic">
-            Ignite the Spark. Celebrate the Spirit.
-          </p>
-          <p className="mt-2 text-sm text-indigo-400">
+          
+          
+
+          <p className="mt-2 text-sm text-white">
             Swarnandhra College of Engineering and Technology
           </p>
         </div>
@@ -165,7 +152,7 @@ const AboutFest = () => {
 
         {/* Footer Note */}
         <div className="mt-16 text-center text-sm text-indigo-400">
-          Registration opens soon. Stay tuned for updates and announcements.
+          Join us to make this Utkarsh-2025 unforgettable.
         </div>
       </div>
     </section>

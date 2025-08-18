@@ -4,35 +4,64 @@ import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import hackathon from "@/assets/Hackathon.jpg"; // update path as needed
+import hackathon from "@/assets/hero-banner.jpg"; // update this path as you needed
+
+// need to set 2 googlr forms link
 
 const HackathonPage: React.FC = () => {
 
   const event = {
     title: "HackSprint",
-    description: "A 24-hour coding marthon to innovate, collaborate, and conquer real-world challenges.",
+    description: "A 24-hour National coding marthon to innovate, collaborate, and conquer real-world challenges.",
     category: "technical",
     fullDescription:
-      "Join us for an electrifying hackathon where innovation meets execution. Whether you're a seasoned coder or a curious beginner, this is your chance to build, collaborate, and compete for exciting prizes.",
+      "The National Hackathon is a 24-hour coding and innovation marathon aimed at fostering creativity, problem-solving, and teamwork among college students across the nation. Organized by the Department of Information Technology at Swarnandhra College of Engineering and Technology, this event offers a platform for students to showcase their technical skills and innovative ideas.",
     rules: [
-      "Teams must consist of 2–4 members.",
-      "All code must be written during the event.",
-      "External libraries are allowed but must be declared.",
-      "Respectful conduct is mandatory.",
+      "Teams must have at least 4 members, all from the same department.",
+      "All participants must be currently enrolled college students.",
+      "The hackathon will run continuously for 24 hours; participants should be prepared to stay on campus during this period.",
+      "All work must be original; plagiarism will result in immediate disqualification.",
+      "Participants should bring their own laptops and required accessories.",
+      "Respectful behavior and adherence to the code of conduct are mandatory.",
+      "Snacks will be provided by the organizers.",
     ],
-    gamerules: [],
-    prize: "₹50,000",
-    entryFee: "₹100",
-    teamSize: "2–4 members",
-    registrationDeadline: "August 30, 2025",
-    coordinator: {
-      name: "Sumanth R",
-      contact: "+91 98765 43210",
-      email: "sumanth@example.com",
+    domains: [
+      "Cyber Security and Privacy",
+      "Healthcare Innovation",
+      "SpaceTech Exploration",
+      "FinTech Financial Inclusion",
+      "Sustainable Smart Cities",
+      "Smart Agriculture"
+    ],
+    note: [
+      "Eligibility: Open to all college students across India",
+      "Department Requirement: All members must be from the same department",
+      "Certificates will be awarded to all participants.",
+      "For Swarnandhra College Students Enter Fee ₹200 Per Head"
+    ],
+    prize: "₹75,000",
+    entryFee: "₹300 Per Head",
+    teamSize: "2-4 members",
+    registrationDeadline: "September 4, 2025",
+    facultycoordinator: {
+      name1: "D Raghava",
+      contact1: "+91 9059088332",
+      name2:"K Vinay",
+      contact2:"+91 8374936876",
     },
-    date: "September 15, 2025",
-    time: "10:00 AM – 6:00 PM",
-    venue: "Main Auditorium, Swarnandhar College",
+    studentcoordinator: {
+      name1: "D Raghava",
+      contact1: "+91 9059088332",
+      name2: "I. Swathi",
+      contact2: "+91 9347550698",
+      name3:"K Vinay",
+      contact3: "+91 8374936876",
+      name4:"B. Indu",
+      contact4: "+91 8247031525",
+    },
+    date: "10th Sept - 11th Sept, 2025",
+    time: "10:00 AM – 10:00 AM",
+    venue: "Swarnandhra College of Engineering and Technology",
   };
 
   return (
@@ -40,7 +69,7 @@ const HackathonPage: React.FC = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-12 mt-11">
+      <section className="bg-gradient-to-r from-blue-100 via-purple-50 to-pink-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-12 mt-11">
         <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1">
             <span className="inline-block bg-blue-100 text-blue-700 font-semibold text-sm px-3 py-1 rounded-full mb-4">
@@ -64,7 +93,7 @@ const HackathonPage: React.FC = () => {
               </div>
             </div>
             <a
-              href="https://forms.gle/qBfu5Qwov2wrf3gd8"
+              href="https://forms.gle/qBfu5Qwov2wrf3gd8"  //Google form link here
               target="_blank"
               className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
             >
@@ -83,7 +112,7 @@ const HackathonPage: React.FC = () => {
 
 
       {/* Main Content */}
-      <section className="py-12">
+      <section className="py-12 bg-gradient-to-r from-blue-100 via-purple-50 to-pink-100 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Event Details */}
@@ -100,10 +129,10 @@ const HackathonPage: React.FC = () => {
                 </CardContent>
               </Card>
 
-              {/* Rules */}
+              {/* Rules &Guidelines */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Rules & Eligibility</CardTitle>
+                  <CardTitle>Rules & Guidelines</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
@@ -117,14 +146,31 @@ const HackathonPage: React.FC = () => {
                 </CardContent>
               </Card>
 
-              {/* Game Rules */}
+              {/* Domains */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Event Guidelines</CardTitle>
+                  <CardTitle>Domains</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {event.rules.map((rule, index) => (
+                    {event.domains.map((rule, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">{rule}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Notes */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Note</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {event.note.map((rule, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                         <span className="text-muted-foreground">{rule}</span>
@@ -185,75 +231,102 @@ const HackathonPage: React.FC = () => {
                     </div>
                   </div>
 
+                  {/* samr google form link need here also */}
                   <Button className="w-full" variant="hero" onClick={() => window.open("https://forms.gle/qBfu5Qwov2wrf3gd8", "_blank")}>
                     Register Now
                   </Button>
                 </CardContent>
               </Card>
 
-              {/* Coordinator Info */}
+
+              {/* Faculty Coordinators */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Event Coordinator</CardTitle>
+                  <CardTitle>Faculty Coordinators</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <div>
-                    <div className="font-semibold">{event.coordinator.name}</div>
-                    <div className="text-sm text-muted-foreground">
-                      Event Coordinator
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.facultycoordinator.name1}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">
+                        {event.facultycoordinator.contact1}
+                      </span>
                     </div>
                   </div>
 
                   <Separator />
 
                   <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm">{event.coordinator.contact}</span>
+                    <div className="font-semibold">
+                      {event.facultycoordinator.name2}
                     </div>
                     <div className="flex items-center gap-2">
-                      <Mail className="h-4 w-4 text-primary" />
-                      <span className="text-sm">{event.coordinator.email}</span>
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">
+                        {event.facultycoordinator.contact2}
+                      </span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Quick Info */}
+
+              {/* Student Coordinator */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Quick Info</CardTitle>
+                  <CardTitle>Student Coordinators</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-primary" />
-                    <div>
-                      <div className="font-semibold text-sm">Date</div>
-                      <div className="text-sm text-muted-foreground">
-                        {event.date}
-                      </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.studentcoordinator.name1}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">{event.studentcoordinator.contact1}</span>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-primary" />
-                    <div>
-                      <div className="font-semibold text-sm">Time</div>
-                      <div className="text-sm text-muted-foreground">
-                        {event.time}
-                      </div>
+                  <Separator />
+
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.studentcoordinator.name2}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">{event.studentcoordinator.contact2}</span>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-primary" />
-                    <div>
-                      <div className="font-semibold text-sm">Venue</div>
-                      <div className="text-sm text-muted-foreground">
-                        {event.venue}
-                      </div>
+                  <Separator />
+
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.studentcoordinator.name3}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">{event.studentcoordinator.contact3}</span>
                     </div>
                   </div>
+
+                  <Separator />
+
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.studentcoordinator.name4}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">{event.studentcoordinator.contact4}</span>
+                    </div>
+                  </div>
+
+                
                 </CardContent>
               </Card>
             </div>

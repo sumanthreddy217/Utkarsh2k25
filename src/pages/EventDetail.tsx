@@ -186,14 +186,17 @@ const EventDetail = () => {
                     </div>
 
                     {/* 2nd Prize Dtails */}
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-primary mb-1">
+                    {event.prize2 && (
+                      <div className="text-center">
+                        <div className="text-3xl font-bold text-primary mb-1">
                         {event.prize2}
                       </div>
                       <div className="text-sm text-muted-foreground">
                         2nd Prize Pool
                       </div>
                     </div>
+                    )}
+                    
                   </div>
 
                   <Separator />
@@ -272,48 +275,106 @@ const EventDetail = () => {
                 </CardContent>
               </Card>
 
-              {/* Coordinator Info */}
+              {/* Faculty Coordinator Info */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Event Coordinators</CardTitle>
+                  <CardTitle>Faculty Coordinator</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div>
                     <div className="font-semibold">
-                      {event.coordinator.name1}
+                      {event.facultyCoordinator.name1}
                     </div>
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-primary" />
                       <span className="text-sm">
-                        {event.coordinator.contact1}
+                        {event.facultyCoordinator.contact1}
                       </span>
                     </div>
-                    {/* <div className="text-sm text-muted-foreground">
-                      Event Coordinator
-                    </div> */}
                   </div>
 
                   <Separator />
 
                   <div className="space-y-2">
                     <div className="font-semibold">
-                      {event.coordinator.name2}
+                      {event.facultyCoordinator.name2}
                     </div>
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-primary" />
                       <span className="text-sm">
-                        {event.coordinator.contact2}
+                        {event.facultyCoordinator.contact2}
                       </span>
                     </div>
-                    {/* <div className="flex items-center gap-2">
-                      <Mail className="h-4 w-4 text-primary" />
-                      <span className="text-sm">{event.coordinator.email}</span>
-                    </div> */}
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Quick Info */}
+              {/* Student Coordinator Info */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Student Coordinator</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div>
+                    <div className="font-semibold">
+                      {event.studentCoordinator.name1}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">
+                        {event.studentCoordinator.contact1}
+                      </span>
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.studentCoordinator.name2}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">
+                        {event.studentCoordinator.contact2}
+                      </span>
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.studentCoordinator.name3}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">
+                        {event.studentCoordinator.contact3}
+                      </span>
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  {}
+                  <div className="space-y-2">
+                    <div className="font-semibold">
+                      {event.studentCoordinator.name4}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="text-sm">
+                        {event.studentCoordinator.contact4}
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+
+
+              {/* Quick Info
               <Card>
                 <CardHeader>
                   <CardTitle>Quick Info</CardTitle>
@@ -349,7 +410,7 @@ const EventDetail = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>
