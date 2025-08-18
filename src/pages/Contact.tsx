@@ -4,6 +4,32 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import { useState } from "react";
+
+// With Email.js to Make this page non-function to functional page
+// const [formData, setFormData] = useState({
+//   name: "",
+//   email: "",
+//   message: "",
+// });
+
+// // Every time the user types, you update the state:
+// const handleChange = (e) => {
+//   setFormData((prev) => ({
+//     ...prev,
+//     [e.target.name]: e.target.value,
+//   }));
+// };
+
+// // When the user clicks “Submit,” this function runs
+// const handleSubmit = (e) => {
+//   e.preventDefault(); // prevents page reload
+
+//   console.log("Form submitted:", formData); // logs the data
+//   alert("Message sent successfully!"); // shows a popup
+
+//   setFormData({ name: "", email: "", message: "" }); // clears the form
+// };
 
 const Contact = () => {
   return (

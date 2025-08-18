@@ -9,7 +9,7 @@ const Hero = () => {
 
   const departments = [
     "Information Technology", 1000,
-    "CSE (Data Science)", 1000,
+    "IT & CSD Students", 1000,
   ];
 
 

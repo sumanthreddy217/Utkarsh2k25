@@ -8,10 +8,10 @@ import questioningEnquiry from "@/assets/Quiz.jpg";
 
 //Non-Technical Evnets Images
 import treasureHunt from "@/assets/Treasure Hunt.jpg";
-import rubicsCube from "@/assets/rubiks-cube.avif";
 import videoShoot from "@/assets/video-shoot.webp";
 import photoBooth from "@/assets/non-tech-event-icon.jpg";
 import chessGame from "@/assets/Chess-Game.webp";
+import sudoku from "@/assets/Sudoku.jpg";
 
 //Online Games Images
 import freeFire from "@/assets/garena-free-fire.jpg";
@@ -26,21 +26,25 @@ export interface Event {
   category: "technical" | "non-technical" | "mobile-games";
   date: string;
   participants: number;
-  prize: string;
+  prize1: string;  //for 1st prize
+  prize2: string;  // for 2nd prize
   image: any;    // I changed it "string" to "any" if it get any error change back to "string".
   fullDescription: string;
   rules: string[];
-  gamerules: string[];
+  Note: string[];
   coordinator: {
-    name: string;
-    contact: string;
-    email: string;
+    name1: string;
+    contact1: string;
+    name2: string;
+    contact2: string;
+    // email: string;
   };
   venue: string;
   time: string;
   registrationDeadline: string;
   entryFee: string;
   teamSize: string;
+  registrationLink?: string;
 }
 
 export const technicalEvents: Event[] = [
@@ -49,87 +53,122 @@ export const technicalEvents: Event[] = [
     title: "UI/UX Design Contest",
     description: "48-hour coding challenge with exciting problems",  //need to change
     category: "technical",
-    date: "March 15-16",
-    participants: 4,
-    prize: "₹50,000",
+    date: "September 9",
+    participants: 2,
+    prize1: "₹2,000",
+    prize2: "₹1,000",
     image: uiUxDesign,
     fullDescription: "A 48-hour intensive coding competition where participants solve complex algorithmic problems, build innovative projects, and showcase their programming skills. Teams will work on real-world challenges with mentorship from industry experts.",
     rules: [
-      "Teams of 2-4 members",
-      "Laptops and development tools allowed",
-      "Internet access provided",
-      "No external help from mentors during competition",
-      "Code must be original and written during the event"
+      "All designs must strictly follow the given competition theme.",
+      "explaining the concept, user research, design process, and final outcome.",
+      "web page must be presented using visual aids such as Figma prototypes or live demos.",
+      "The presentation must have a time limit of 5 minutes.",
+      "While presenting, participants should maintain eye contact with judges and explain design decisions clearly.",
+      "Proper explanation of user flow, colour palette selection, and typography is expected.",
+      "The maximum limit of participants is 2 members.",
+      "web page must be created entirely by the participants themselves and presented at the event.",
+      "Be ready to answer questions from judges about your design choices.",
+      "The registration process will be completed online through the official event portal"
     ],
-    gamerules: [],
+    Note: [
+      "ID card is mandatory for participation.",
+      "Participants should be from the same department"
+    ],
     coordinator: {
-      name: "Arjun Sharma",
-      contact: "+91 9876543210",
-      email: "arjun@utkarsh2k25.com"
+      name1: "Mr. K. Bhanu Chand",
+      contact1: "+91 9160984527",
+      name2: "Mrs J.N.D. Lakshmi",
+      contact2: "+91 8187879500",
+      
     },
-    venue: "Computer Science Lab A",
-    time: "9:00 AM - 9:00 AM (Next Day)",
-    registrationDeadline: "March 10, 2025",
-    entryFee: "₹200 per team",
-    teamSize: "2-4 members"
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 9, 2025",
+    entryFee: "₹100 per Team",
+    teamSize: "2 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
     id: "1.2",
     title: "Questioning Enquiry (Quiz)",
-    description: "Build responsive websites with modern technologies",   // need to change
+    description: "Test your general knowledge, logic, and speed in this fast-paced quiz showdown.",
     category: "technical",
-    date: "March 16",
+    date: "September 9",
     participants: 3,
-    prize: "₹30,000",
+    prize1: "₹2,000",
+    prize2: "₹1,000",
     image: questioningEnquiry,
     fullDescription: "Create stunning, responsive websites using modern web technologies. Participants will be judged on creativity, functionality, responsiveness, and code quality. Themes will be announced at the start of the competition.",
     rules: [
-      "Teams of 1-3 members",
-      "Use any web framework/library",
-      "Must be responsive and mobile-friendly",
-      "Original design required",
-      "6-hour time limit"
+      "Maximum number of participants are 3 members.",
+      "Mobiles or electronic devices are not allowed.",
+      "The audience should not give any hints or clues to the competitors.",
+      "Questions are in the form of multiple choices, visuals include hardware images, logos of computer related etc.",
+      "The decision of the quiz master is final and will not be subjected to any changes.",
+      "There will be total of 3 rounds. 1st and 2nd rounds will be paper tests with multiple-choice questions and, and the 3rd round will be a visual round, No negative marking.",
+      "Question papers will be provided directly to the participants.",
+      "For the 3rd round, the questions will be displayed on the screen, there will be buzzer provided in the room, those who know the answer should come and press the buzzer.",
+      "Time limit for 1st & 2nd round is 30mintues and 1mintue for visuals.",
+      "Top 8 teams will be selected for the final round."
     ],
-    gamerules: [],
+    Note: [
+      "ID card is mandatory for participation.",
+      "Participants should be from the same department."
+    ],
     coordinator: {
-      name: "Priya Patel",
-      contact: "+91 9876543211",
-      email: "priya@utkarsh2k25.com"
+      name1: "Mr. K. Bhanu Chand",
+      contact1: "+91 9160984527",
+      name2: "Mr. V. Manikanta",
+      contact2: "+91 6309177002",
+      
     },
-    venue: "Web Development Lab",
-    time: "10:00 AM - 4:00 PM",
-    registrationDeadline: "March 12, 2025",
-    entryFee: "₹150 per team",
-    teamSize: "1-3 members"
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹300 per Team",
+    teamSize: "3 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
     id: "1.3",
     title: "Bill Board (poster presentation)",
-    description: "Solve real-world problems using artificial intelligence",  // need to change
+    description: "Present your ideas visually with impactful posters on tech or social themes.", 
     category: "technical",
-    date: "March 17",
-    participants: 4,
-    prize: "₹40,000",
+    date: "September 9",
+    participants: 1,
+    prize1: "₹2,000",
+    prize2: "₹1,000",
     image: billBoard,
     fullDescription: "Apply machine learning and AI techniques to solve real-world datasets and problems. Participants will work with provided datasets to build predictive models and present their solutions to industry experts.",
     rules: [
-      "Teams of 2-4 members",
-      "Python/R programming allowed",
-      "Pre-trained models permitted",
-      "Dataset provided on spot",
-      "8-hour competition"
+      "This event is for individual participation.",
+      "This presentation must have a time limit of 5 minutes.",
+      "Presentation topics must be related to technical.",
+      "Participants should come with their posters.",
+      "Do not overload the poster with more information.",
+      "Use more than 3 colors and more than 3 fonts.",
+      "Background should be light and homogeneous.",
+      "Participants should maintain eye contact and hand gestures during their presentation.",
+      "Use brief and simple language, it is better to avoid text altogether."
     ],
-    gamerules: [],
+    Note: [
+      "ID card is mandatory for participation.",
+      "This presentation must have a time limit of 5 minutes."
+    ],
     coordinator: {
-      name: "Dr. Raj Kumar",
-      contact: "+91 9876543212",
-      email: "raj@utkarsh2k25.com"
+      name1: "Ms. U. Jenny Grace",
+      contact1: "+91 9490702757",
+      name2: "MRS. Rupa",
+      contact2: "+91 7659029659",
+      
     },
-    venue: "AI Research Lab",
-    time: "9:00 AM - 5:00 PM",
-    registrationDeadline: "March 13, 2025",
-    entryFee: "₹250 per team",
-    teamSize: "2-4 members"
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 9, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "Single",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
 
   {
@@ -138,28 +177,37 @@ export const technicalEvents: Event[] = [
     description: "...",  // need to add
     category: "technical",
     date: "...",
-    participants: 4,
-    prize: "...",
+    participants: 3,
+    prize1: "₹3,500",
+    prize2: "₹2,500",
     image: slideDeck,
     fullDescription: "...",
     rules: [
-      "Teams of 2-4 members",
-      "Python/R programming allowed",
-      "Pre-trained models permitted",
-      "Dataset provided on spot",
-      "8-hour competition"
+      "1.	Maximum number of participants are 3 members",
+      "Maximum time for a presentation is 10-15mintues, and the maximum slides required are 15 and the minimum slides are 12.",
+      "Presentation topics must be related to technical.",
+      "Participants should come with their own laptops.",
+      "Participants should maintain eye contact and hand gestures while giving their presentation.",
+      " Registration will be done online through the website."
     ],
-    gamerules: [],
+   Note: [
+      "ID card is mandatory for participation.",
+      "This presentation must have a time limit of 10-15 minutes.",
+      "Certificates will be provided for all winners and runners."
+    ],
     coordinator: {
-      name: "...",
-      contact: "+91 xxxx",
-      email: "...."
+      name1: "Mr. P. Nagendra Babu",
+      contact1: "+91 8125757521",
+      name2: "Mrs. V. Sivani",
+      contact2: "+91 8555831457",
+      
     },
-    venue: "...",
-    time: "...",
-    registrationDeadline: "...",
-    entryFee: "...",
-    teamSize: "..."
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹200 per Head",
+    teamSize: "3 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
     id: "1.5",
@@ -167,57 +215,78 @@ export const technicalEvents: Event[] = [
     description: "...",  // need to add
     category: "technical",
     date: "...",
-    participants: 4,
-    prize: "...",
+    participants: 3,
+    prize1: "₹3,500",
+    prize2: "₹2,500",
     image: projectExpo,
     fullDescription: "...",
     rules: [
-      "Teams of 2-4 members",
-      "Python/R programming allowed",
-      "Pre-trained models permitted",
-      "Dataset provided on spot",
-      "8-hour competition"
+      "Projects should align with Technical theme of the Expo",
+      "A detailed project report is required, explaining the concept, methodology & conclusions.",
+      "It needs to be presented using visual aids such as posters, model or digital presentations.",
+      "This presentation must have time limit of 10 minutes.",
+      "While presenting, participants should have eye contact to judges not only to the screen.",
+      "Eye contact and hand gestures to be maintained.",
+      "The maximum limit of participants is 3 members.",
+      "Participants should be prepared to answer questions from judges.",
+      "The registration process will be done online through the website."
     ],
-    gamerules: [],
+    Note: [
+      "ID card is mandatory for participation.",
+      "Participants should be from Same department.",
+      "This presentation must have time limit of 10 minutes."
+    ],
     coordinator: {
-      name: "...",
-      contact: "+91 xxxx",
-      email: "...."
+      name1: "Mr.Nagendra Babu",
+      contact1: "+91 8125757521",
+      name2: "Mrs. V. sivani",
+      contact2: "+91 8555831457",
+      
     },
-    venue: "...",
-    time: "...",
-    registrationDeadline: "...",
-    entryFee: "...",
-    teamSize: "..."
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 9, 2025",
+    entryFee: "₹200 per Team",
+    teamSize: "2-3 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
     id: "1.6",
     title: "Extreme Results",
     description: "...",  // need to add
     category: "technical",
-    date: "...",
-    participants: 4,
-    prize: "...",
+    date: "September 9",
+    participants: 1,
+    prize1: "₹2,500",
+    prize2: "₹1,500",
     image: extremeResult,
     fullDescription: "...",
     rules: [
-      "Teams of 2-4 members",
-      "Python/R programming allowed",
-      "Pre-trained models permitted",
-      "Dataset provided on spot",
-      "8-hour competition"
+      "This Event is for individual participation.",
+      "The Maximum time limit to write a program is 20 minutes.",
+      "Registrations are manual.",
+      "Any Output an emoji ,a sketch of your choice .The Output should be Impressive, Attractive and Interesting.",
+      "The program can be written in C/C++/Java/Python turtle.",
+      "Participants are not allowed to open other tabs during the participation, otherwise they are disqualified.",
+      "The event will be conducted in our computer lab."
     ],
-    gamerules: [],
+    Note: [
+      "ID card is mandatory for participation.",
+      "This Event have time limit 20 minutes only to write an program."
+    ],
     coordinator: {
-      name: "...",
-      contact: "+91 xxxx",
-      email: "...."
+      name1: "MR. Swami Naidu",
+      contact1: "+91 9160984527",
+      name2: "DR. Pawan Kalyan",
+      contact2: "+91 630917702",
+      
     },
-    venue: "...",
-    time: "...",
-    registrationDeadline: "...",
-    entryFee: "...",
-    teamSize: "..."
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 9, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "Single",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   }
 ];
 
@@ -229,73 +298,43 @@ export const nonTechnicalEvents: Event[] = [
     category: "non-technical",
     date: "March 15",   // need to change
     participants: 3,
-    prize: "₹25,000",  // need to change
+    prize1: "₹2,000", 
+    prize2: "Null",  
     image: treasureHunt,
     fullDescription: "The Treasure Hunt is a thrilling campus-wide challenge designed to test your teamwork, problem-solving, and navigation skills. Participants will follow a trail of verbal clues scattered across the college, solving riddles and completing tasks to reach the final treasure.",
     rules: [
-      "No splitting up—teams must stay together.",
-      "No tampering with clues meant for other teams.",
-      "No running in buildings or restricted zones.",
-      "Respect college property and avoid disrupting classes.",
-      "No arguments with coordinators, volunteers, or other teams",
-      "Cheating, bribery, or stealing clues = disqualification.",
-      "Each participant must be a registered student or fest attendee"
+      "This is a team participation event, with each team consisting of 3 members.",
+      "The game will be conducted within the college surroundings or inside classrooms. A single treasure will be hidden.",
+      "The treasure map and the first clue will be revealed at the start of the event. Subsequent clues will be provided to guide each team to the hidden treasure.",
+      "The time limit for the hunt is 30 to 40 minutes.",
+      "The first team to find the treasure within the time limit will be the winner."
     ],
-    gamerules: [
-      "Clues will guide teams from one location to the next",
-      "Each clue must be solved before moving forward",
-      "Physical tasks or challenges (if any) must be completed to earn the next clue",
-      "Do not tamper with or remove clues meant for other teams",
-      "Use of mobile phones or internet is only allowed if specified in the clue"
+    Note: [
+      "Your College ID card is mandatory for participation."
     ],
     coordinator: {
-      name: "D.Tilak Kumar",
-      contact: "+91 XXXXXXXX",
-      email: "Tilak@utkarsh2k25.com"
+      name1: "Mr. Anand",
+      contact1: "+91 9491577090",
+      name2: "Mrs. Rupa",
+      contact2: "+91 7659029659",
+      
     },
-    venue: "Main Auditorium",
+    venue: "Swarnandhra College IT Department",
     time: "6:00 PM - 9:00 PM",
-    registrationDeadline: "March 8, 2025",
-    entryFee: "₹100 per participant",
-    teamSize: "2-3 members"
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹300 per Team",
+    teamSize: "3 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
     id: "2.2",
-    title: "Rubics Cube",
-    description: "Slow and steady wins the race of solving the Rubik’s cube",
-    category: "non-technical",
-    date: "March 16",
-    participants: 6,
-    prize: "₹35,000",
-    image: rubicsCube,
-    fullDescription: "A celebration of musical talent featuring band competitions, solo vocal performances, and instrumental showcases. From rock to classical, acoustic to electronic - all genres welcome. Professional musicians and music directors will judge the performances.",
-    rules: [
-      "Solo or band (max 6 members)",
-      "Performance time: 4-8 minutes",
-      "Bring your own instruments",
-      "Backing tracks allowed",
-      "Original compositions get bonus points"
-    ],
-    gamerules: [],
-    coordinator: {
-      name: "Vikram Singh",
-      contact: "+91 9876543214",
-      email: "vikram@utkarsh2k25.com"
-    },
-    venue: "Open Air Theatre",
-    time: "7:00 PM - 11:00 PM",
-    registrationDeadline: "March 9, 2025",
-    entryFee: "₹150 per team",
-    teamSize: "1-6 members"
-  },
-  {
-    id: "2.3",
-    title: "Video Shoot",
+    title: "VideoGraphy",
     description: "I love editing. It’s one of my favourite parts about video making.",
     category: "non-technical",
-    date: "March 17",
-    participants: 1,
-    prize: "₹20,000",
+    date: "Septmber 9",
+    participants: 7,
+    prize1: "₹2,000", 
+    prize2: "₹1,000",
     image: videoShoot,
     fullDescription: "A platform for artists to showcase their creativity through paintings, sketches, digital art, sculptures, and mixed media. Themes include abstract art, portraits, landscapes, and social awareness. Art will be displayed throughout the fest for public viewing.",
     rules: [
@@ -305,26 +344,34 @@ export const nonTechnicalEvents: Event[] = [
       "Artworks must be original",
       "Frame your paintings/sketches"
     ],
-    gamerules: [],
+    Note: [
+      "Format: MP4 / MOV preferred.",
+      "Resolution: Minimum  720p.",
+      "Clear audio is mandatory."
+    ],
     coordinator: {
-      name: "Kavya Joshi",
-      contact: "+91 9876543215",
-      email: "kavya@utkarsh2k25.com"
+      name1: "Mr. K. Bhanu Chand",
+      contact1: "+91 9160984527",
+      name2: "Mr. V. Manikanta",
+      contact2: "+91 6309177002",
+      
     },
-    venue: "Art Gallery",
-    time: "10:00 AM - 6:00 PM",
-    registrationDeadline: "March 5, 2025",
-    entryFee: "₹50 per artwork",
-    teamSize: "Individual"
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹200 per Team",
+    teamSize: "5-7 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
-    id: "2.4",
+    id: "2.3",
     title: "Photo Booth Contest",
     description: "Making memories one click at a time", 
     category: "non-technical",
-    date: "...",
-    participants: 4,
-    prize: "...",
+    date: "September 9-10",
+    participants: +999,
+    prize1: "₹2,000", 
+    prize2: "₹1,000",
     image: photoBooth,
     fullDescription: "...",
     rules: [
@@ -334,75 +381,122 @@ export const nonTechnicalEvents: Event[] = [
       "Dataset provided on spot",
       "8-hour competition"
     ],
-    gamerules: [],
+    Note: [
+      "No Enter Fee"
+    ],
     coordinator: {
-      name: "...",
-      contact: "+91 xxxx",
-      email: "...."
+      name1: "Mr. K. Bhanu Chand",
+      contact1: "+91 9160984527",
+      name2: "Mr. V. Manikanta",
+      contact2: "+91 6309177002",
     },
-    venue: "...",
-    time: "...",
-    registrationDeadline: "...",
-    entryFee: "...",
-    teamSize: "..."
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "No Fee",
+    teamSize: "NO Need",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
-    id: "2.5",
+    id: "2.4",
     title: "Check Mate!",
     description: "Chess is not just a game, it’s a battle of minds where every move can change the outcome", 
     category: "non-technical",
-    date: "...",
-    participants: 4,
-    prize: "...",
+    date: "September 10",
+    participants: 1,
+    prize1: "₹2,500",
+    prize2: "₹1,500",
     image: chessGame,
     fullDescription: "...",
     rules: [
-      "Teams of 2-4 members",
-      "Python/R programming allowed",
-      "Pre-trained models permitted",
-      "Dataset provided on spot",
-      "8-hour competition"
+      "This is for individual participation.",
+      "The time slot for the match will be 20minutes.",
+      "Castling moves should be done before checking.",
+      "If the match is not completed within the given time, the winner is considered based on who has highest points.",
+      "After completion of each match the winner from that match is going to play with the winner of the other match. This process is done till the last match."
     ],
-    gamerules: [],
+    Note: [
+      "ID card is mandatory for participation."
+    ],
     coordinator: {
-      name: "...",
-      contact: "+91 xxxx",
-      email: "...."
+      name1: "MR. K. Raja",
+      contact1: "+91 9963744490",
+      name2: "MRS. Rupa",
+      contact2: "+91 7659029659",
+      
     },
-    venue: "...",
-    time: "...",
-    registrationDeadline: "...",
-    entryFee: "...",
-    teamSize: "..."
+    venue: "Swarnandhra College IT Department",
+    time: "6:00 PM - 9:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "Single",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
-    id: "2.6",
+    id: "2.5",
     title: "Spontaneous Competation",
     description: "Chess is not just a game, it’s a battle of minds where every move can change the outcome", 
     category: "non-technical",
     date: "...",
     participants: 4,
-    prize: "...",
+    prize1: "₹2,500",
+    prize2: "₹1,500",
     image: chessGame,
     fullDescription: "...",
     rules: [
-      "Teams of 2-4 members",
-      "Python/R programming allowed",
-      "Pre-trained models permitted",
-      "Dataset provided on spot",
-      "8-hour competition"
+      "This is for individual Participation.",
+      "Maximum time for presenting is 3 minutes.",
+      "Presentation topics will be revealed at the time of conducting events.",
+      "Registration will be done online through website.",
     ],
-    gamerules: [],
+    Note: ["ID card is mandatory for participation."],
     coordinator: {
-      name: "...",
-      contact: "+91 xxxx",
-      email: "...."
+      name1: "Ms. U. Jenny Grace ",
+      contact1: "+91 9490702757",
+      name2: "Mrs. Suma ",
+      contact2: "+91 9392681899"
     },
-    venue: "...",
-    time: "...",
-    registrationDeadline: "...",
-    entryFee: "...",
-    teamSize: "..."
+    venue: "Swarnandhra College IT Department",
+    time: "7:00 PM - 11:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "1 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
+  },
+  {
+    id: "2.5",
+    title: "Sudoku",
+    description: "....", 
+    category: "non-technical",
+    date: "...",
+    participants: 1,
+    prize1: "₹2,000",
+    prize2: "₹1,000",
+    image: sudoku,
+    fullDescription: "...",
+    rules: [
+      "This is for individual participation.",
+      "Time limit to solve the puzzle will be 30mintues.",
+      "This is a puzzle game , its objective is to fill a 9*9 grid with digits from 1 to 9. It is a number placement puzzle.",
+      "Each row and column must contain the numbers from 1 to 9, without repetitions.",
+      "The digits can only occur once per block.",
+      "This game is conducted by providing paper sheets. Those whose sheet matches with the actual answer sheet is declared as the winners.",
+      "If there are multiple winners, then those who submit the sheet in less time are chosen as the winner."
+
+    ],
+    Note: ["ID card is mandatory for participation."],
+    coordinator: {
+      name1: "Mr. K. Raja ",
+      contact1: "+91 9963744490",
+      name2: "Mrs. K. Bhavani ",
+      contact2: "+91 8074349394"
+    },
+    venue: "Swarnandhra College IT Department",
+    time: "7:00 PM - 11:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "1 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   }
 ];
 
@@ -412,58 +506,73 @@ export const mobileGames: Event[] = [
     title: "Ludo",
     description: "Roll the dice, strategize, and race your tokens to victory in the classic Ludo game!",
     category: "mobile-games",
-    date: "March 15",
-    participants: 8,
-    prize: "₹25,000",
+    date: "September 10",
+    participants: 1,
+    prize1: "₹3,000",
+    prize2: "₹1,500",
     image: LUDO,
     fullDescription: "Express yourself through the art of dance! Multiple categories including solo, duo, and group performances. From classical to contemporary, hip-hop to folk - all dance forms are welcome. Professional choreographers will judge the performances.",
     rules: [
-      "Solo, duo, or group (max 8 members)",
-      "Performance time: 3-6 minutes",
-      "Any dance form allowed",
-      "Props allowed (bring your own)",
-      "Original choreography preferred"
+      "This event is for individual participation.",
+      "It is a two-player game (only two players can play at a time).",
+      "Players have to play on their own mobiles.",
+      "This will be coordinated in a WhatsApp group.",
+      "If in case of any technical issues like charging, phone hanging, network issue organizers are not responsible.",
+      "After completion of each match, the winner should show the winning screenshot to participate in the next round.",
+      "The winners in the last round will be announced as the game winner."
     ],
-    gamerules: [],
+    Note: [
+      "ID card is mandatory for participation."
+    ],
     coordinator: {
-      name: "Sneha Reddy",
-      contact: "+91 9876543213",
-      email: "sneha@utkarsh2k25.com"
+      name1: "MRS. Lavanya",
+      contact1: "+91 9390432125",
+      name2: "MRS. Durga",
+      contact2: "+91 8790772947",
+      
     },
-    venue: "Main Auditorium",
+    venue: "Swarnandhra College IT Department",
     time: "6:00 PM - 9:00 PM",
-    registrationDeadline: "March 8, 2025",
-    entryFee: "₹100 per participant",
-    teamSize: "1-8 members"
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "Single",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
     id: "3.2",
     title: "Free Fire",
     description: "Free Fire event—team up, fight hard, and be the last squad standing!",
     category: "mobile-games",
-    date: "March 16",
-    participants: 6,
-    prize: "₹35,000",
+    date: "September 10",
+    participants: 4,
+    prize1: "₹3,000",
+    prize2: "₹2,000",
     image: freeFire,
     fullDescription: "A celebration of musical talent featuring band competitions, solo vocal performances, and instrumental showcases. From rock to classical, acoustic to electronic - all genres welcome. Professional musicians and music directors will judge the performances.",
     rules: [
-      "Solo or band (max 6 members)",
-      "Performance time: 4-8 minutes",
-      "Bring your own instruments",
-      "Backing tracks allowed",
-      "Original compositions get bonus points"
+      "Registrations will be done using college ID cards.",
+      "Registrations are manual.",
+      "Free fire players can be from our college students only.",
+      "Every player with a team should come to the registration desk with their player ID along with their college ID card",
+      "Certificates will be provided for all winners and runners"
     ],
-    gamerules: [],
+    Note: [
+      "Participants should be from same department.",
+      "ID card is mandatory for participation.",
+      "If we find any hacks, that team will be disqualified"
+    ],
     coordinator: {
-      name: "Vikram Singh",
-      contact: "+91 9876543214",
-      email: "vikram@utkarsh2k25.com"
+      name1: "Mr. Pawan Kalyan ",
+      contact1: "+91 9493491253",
+      name2: "Mr. Swami Naidu ",
+      contact2: "+91 9701128184"
     },
-    venue: "Open Air Theatre",
+    venue: "Swarnandhra College IT Department",
     time: "7:00 PM - 11:00 PM",
-    registrationDeadline: "March 9, 2025",
-    entryFee: "₹150 per team",
-    teamSize: "1-6 members"
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹600 per team",
+    teamSize: "2-4 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
     id: "3.3",
@@ -472,7 +581,8 @@ export const mobileGames: Event[] = [
     category: "mobile-games",
     date: "March 17",
     participants: 1,
-    prize: "₹20,000",
+    prize1: "₹20,000",
+    prize2: "₹20,000",
     image: PUBG,
     fullDescription: "A platform for artists to showcase their creativity through paintings, sketches, digital art, sculptures, and mixed media. Themes include abstract art, portraits, landscapes, and social awareness. Art will be displayed throughout the fest for public viewing.",
     rules: [
@@ -482,17 +592,19 @@ export const mobileGames: Event[] = [
       "Artworks must be original",
       "Frame your paintings/sketches"
     ],
-    gamerules: [],
+    Note: [],
     coordinator: {
-      name: "Kavya Joshi",
-      contact: "+91 9876543215",
-      email: "kavya@utkarsh2k25.com"
+      name1: "Mr. Pawan Kalyan ",
+      contact1: "+91 9493491253",
+      name2: "Mr. Swami Naidu ",
+      contact2: "+91 9701128184"
     },
-    venue: "Art Gallery",
-    time: "10:00 AM - 6:00 PM",
-    registrationDeadline: "March 5, 2025",
-    entryFee: "₹50 per artwork",
-    teamSize: "Individual"
+    venue: "Swarnandhra College IT Department",
+    time: "7:00 PM - 11:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹600 per team",
+    teamSize: "2-4 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   }
 ];
 
