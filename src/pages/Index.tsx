@@ -29,7 +29,7 @@ const Index = () => {
       <Navbar />
       <Hero />
 
-      {/* Featured Events */}    {/* bg-gradient-to-br from-emerald-50 via-white to-indigo-50" */}
+      {/* Featured Events */} 
       <div className="bg-gradient-to-tr from-emerald-200 via-white to-indigo-200" id="technical-events">
         <EventSection
           title="Technical Events"
@@ -66,7 +66,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div>
-              <h3 className="text-lg font-bold mb-4">Utkarsh 2k25</h3>
+              <h3 className="text-lg font-bold mb-4 text-purple-500">UTKARSH 2025</h3>
               <p className="text-primary-foreground/80">
                 A Three Day National Technical Fest where students can experience Tech, Creativity and Enjoyment. Join
                 us for an unforgettable experience!

@@ -53,7 +53,7 @@ const EventSection = ({
               {/* Show button only if not online-games */}
               {showViewAll && category !== "mobile-games" && (
                 <Link to={`/${category}-events`}>
-                  <Button variant="outline" size="sm" className="whitespace-nowrap bg-purple-400">
+                  <Button variant="outline" size="sm" className="whitespace-nowrap bg-white">
                     View All {title}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

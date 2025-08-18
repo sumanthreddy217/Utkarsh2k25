@@ -145,7 +145,7 @@ const EventDetail = () => {
                 </CardContent>
               </Card>
 
-              {/* Gameplay Rules */}
+              {/* notes */}
               <Card>
                 <CardHeader>
                   <CardTitle>Note</CardTitle>
@@ -202,24 +202,6 @@ const EventDetail = () => {
                   <Separator />
 
                   <div className="space-y-3">
-                    {/* 2nd Prize Dtails */}
-                    {/* <div className="text-center">
-                      <div className="text-xl font-bold text-primary mb-1">
-                        {event.prize2}
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        2nd Prize Pool
-                      </div>
-                    </div> */}
-
-                    {/* <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <DollarSign className="h-4 w-4 text-primary" />
-                        <span className="text-sm">2nd prize</span>
-                      </div>
-                      <span className="font-semibold">{event.prize2}</span>
-                    </div> */}
-
                     {/* Entry Fee Details */}
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -343,7 +325,8 @@ const EventDetail = () => {
 
                   <Separator />
 
-                  <div className="space-y-2">
+                  {event.studentCoordinator.name3 && event.studentCoordinator.contact3 && (
+                    <div className="space-y-2">
                     <div className="font-semibold">
                       {event.studentCoordinator.name3}
                     </div>
@@ -354,11 +337,12 @@ const EventDetail = () => {
                       </span>
                     </div>
                   </div>
+                  )}
 
                   <Separator />
 
-                  {}
-                  <div className="space-y-2">
+                  {event.studentCoordinator.name4 && event.studentCoordinator.contact4 && (
+                    <div className="space-y-2">
                     <div className="font-semibold">
                       {event.studentCoordinator.name4}
                     </div>
@@ -369,6 +353,8 @@ const EventDetail = () => {
                       </span>
                     </div>
                   </div>
+                  )}
+                  
                 </CardContent>
               </Card>
 

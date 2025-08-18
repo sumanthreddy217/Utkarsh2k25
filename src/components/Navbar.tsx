@@ -55,7 +55,7 @@ const Navbar = () => {
               />
             </div>
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Utkarsh 2k25
+              Utkarsh 2025
             </span>
           </Link>
 

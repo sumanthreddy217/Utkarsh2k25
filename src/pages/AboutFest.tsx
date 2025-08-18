@@ -1,32 +1,60 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { FaLaptopCode, FaGamepad, FaLightbulb, FaFilm } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 import festPoster from "@/assets/festPoster.png";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import ConfettiExplosion from "react-confetti-explosion";
 
 
 const departments = [
-  "IT Department", 1000,
-  "CSE - Data Science", 1000,
+  "Information Technology", 2000,
+  "CSE - Data Science", 2000,
 ];
 
 
 const AboutFest = () => {
+  const [isExploding, setIsExploding] = useState(false);
+
+  useEffect(() => {
+    // Trigger confetti blast once on page load
+    setIsExploding(true);
+    const timer = setTimeout(() => setIsExploding(false), 4000);
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <section className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white py-20 px-6">
       {<Navbar />}
 
+      {/* Confetti Blast */}
+      {isExploding && (
+        <div className="absolute inset-0 flex justify-center items-start mt-20 z-50">
+          <ConfettiExplosion
+            force={0.7}
+            duration={3000}
+            particleCount={200}
+            width={1600}
+          />
+        </div>
+      )}
+
       <div className="max-w-6xl mx-auto py-5">
         {/* Hero Header */}
         <div className="text-center mb-16">
-          <h1 className="text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
             Utkarsh 2025
           </h1>
-          
-          
-
-          <p className="mt-2 text-sm text-white">
+          <p className="mt-2 text-white text-lg md:text-2xl text-semibold">
+            Organizing by Students of <TypeAnimation
+              sequence={departments}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              className="text-purple-500 font-bold" />
+          </p>
+          <p className="mt-2 text-sm md:text-lg text-blue-300 text-semibold">
             Swarnandhra College of Engineering and Technology
           </p>
         </div>
@@ -115,7 +143,7 @@ const AboutFest = () => {
               ],
             },
             {
-              title: "Informal Events",
+              title: "Non-Technical Events",
               icon: "🎭",
               items: [
                 "Chess",

@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-8">
           {/* Main Title */}
           <div className="space-y-4">
@@ -32,13 +32,13 @@ const Hero = () => {
                 UTKARSH 2025
               </span>
             </h1>
-            <p className="text-lg sm:text-2xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto drop-shadow text-gray-700">
+            <p className="text-lg sm:text-2xl lg:text-xl text-muted-foreground max-w-2xl mx-auto drop-shadow text-gray-700">
               A Three Day National Technical Fest where students can experience Tech, Creativity and Enjoyment.
             </p>
           </div>
 
           {/* Organizing Info */}
-          <div className="flex flex-col flex-wrap items-center gap-2 gap-y-2 text-muted-foreground justify-center mb-5">
+          <div className="flex flex-col flex-wrap items-center gap-2 gap-y-2 text-muted-foreground justify-center mt-5 mb-5">
             <span className="font-semibold text-2xl text-gray-900">Organizing by</span>
             <div className=" items-center text-center text-gray-700 text-lg font-semibold md:text-2xl sm:text-xl">
               <span className="text-3xl text-bold text-blue-700">IT Department</span> {" "} <br />Swarnandhra College of Engineeering and Technology

@@ -1,9 +1,9 @@
 //Technical Evnets Images
 import projectExpo from "@/assets/Project Expo.jpg";
 import uiUxDesign from "@/assets/UI-UX-Design.webp";
-import slideDeck from "@/assets/Slide Deck Presentation.png";
+import slideDeck from "@/assets/slideDeck.jpg";
 import extremeResult from "@/assets/Crazy Output.webp";
-import billBoard from "@/assets/poster.jpg";
+// import billBoard from "@/assets/poster.jpg";
 import questioningEnquiry from "@/assets/Quiz.jpg";
 
 //Non-Technical Evnets Images
@@ -170,7 +170,7 @@ export const technicalEvents: Event[] = [
     participants: 1,
     prize1: "₹2,000",
     prize2: "₹1,000",
-    image: billBoard,
+    image: slideDeck,
     fullDescription: "This event provides a platform for participants to showcase their technical knowledge using visual posters rather than text-heavy slides. It focuses on creativity, clarity, and the ability to explain concepts effectively within a short duration. The contest is for individual participation, and each participant will have 5 minutes to present their poster. Posters should be simple, with light backgrounds, limited text, and no more than 3 colors and 3 fonts. Participants are expected to maintain eye contact, use hand gestures, and explain their ideas clearly during the presentation.",
     rules: [
       "This event is for individual participation.",
@@ -357,7 +357,48 @@ export const technicalEvents: Event[] = [
     entryFee: "₹100 per Head",
     teamSize: "Single",
     registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
-  }
+  },
+  {
+    id: "1.7",
+    title: "Spontaneous Competation",
+    description: "Chess is not just a game, it’s a battle of minds where every move can change the outcome", 
+    category: "technical",
+    date: "...",
+    participants: 4,
+    prize1: "₹2,500",
+    prize2: "₹1,500",
+    image: chessGame,
+    fullDescription: "...",
+    rules: [
+      "This is for individual Participation.",
+      "Maximum time for presenting is 3 minutes.",
+      "Presentation topics will be revealed at the time of conducting events.",
+      "Registration will be done online through website.",
+    ],
+    Note: ["ID card is mandatory for participation."],
+    facultyCoordinator: {
+      name1: "Ms. U. Jenny Grace ",
+      contact1: "+91 9490702757",
+      name2: "Mrs. Suma ",
+      contact2: "+91 9392681899"
+    },
+    studentCoordinator:{
+      name1: "Ch. Pavani",
+      contact1: "+91 7569606596",
+      name2: "A. Madhu Shalini",
+      contact2: "+91 8883476666",
+      name3: "",
+      contact3: "",
+      name4: "",
+      contact4: "",
+    },
+    venue: "Swarnandhra College IT Department",
+    time: "7:00 PM - 11:00 PM",
+    registrationDeadline: "September 10, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "1 members",
+    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
+  },
 ];
 
 export const nonTechnicalEvents: Event[] = [
@@ -543,47 +584,6 @@ export const nonTechnicalEvents: Event[] = [
   },
   {
     id: "2.5",
-    title: "Spontaneous Competation",
-    description: "Chess is not just a game, it’s a battle of minds where every move can change the outcome", 
-    category: "non-technical",
-    date: "...",
-    participants: 4,
-    prize1: "₹2,500",
-    prize2: "₹1,500",
-    image: chessGame,
-    fullDescription: "...",
-    rules: [
-      "This is for individual Participation.",
-      "Maximum time for presenting is 3 minutes.",
-      "Presentation topics will be revealed at the time of conducting events.",
-      "Registration will be done online through website.",
-    ],
-    Note: ["ID card is mandatory for participation."],
-    facultyCoordinator: {
-      name1: "Ms. U. Jenny Grace ",
-      contact1: "+91 9490702757",
-      name2: "Mrs. Suma ",
-      contact2: "+91 9392681899"
-    },
-    studentCoordinator:{
-      name1: "Ch. Pavani",
-      contact1: "+91 7569606596",
-      name2: "A. Madhu Shalini",
-      contact2: "+91 8883476666",
-      name3: "",
-      contact3: "",
-      name4: "",
-      contact4: "",
-    },
-    venue: "Swarnandhra College IT Department",
-    time: "7:00 PM - 11:00 PM",
-    registrationDeadline: "September 10, 2025",
-    entryFee: "₹100 per Head",
-    teamSize: "1 members",
-    registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
-  },
-  {
-    id: "2.6",
     title: "Sudoku",
     description: "The Sudoku is an individual puzzle-solving event that challenges logical thinking and number placement skills.", 
     category: "non-technical",
@@ -730,18 +730,23 @@ export const mobileGames: Event[] = [
     category: "mobile-games",
     date: "March 17",
     participants: 1,
-    prize1: "₹20,000",
-    prize2: "₹20,000",
+    prize1: "₹3,000",
+    prize2: "₹2,000",
     image: PUBG,
     fullDescription: "This event is open only to college students, bringing out the thrill of competitive gaming within the campus. Teams must register manually by providing their player ID along with their college ID card at the registration desk. The tournament will test participants’ teamwork, strategy, and survival skills in classic PUBG battle royale gameplay. Winners and runners will be recognized with certificates for their achievements. Registrations are strictly limited to verified students with valid college ID proof.",
     rules: [
-      "Individual participation only",
-      "Maximum 3 artworks per participant",
-      "Any medium allowed",
-      "Artworks must be original",
-      "Frame your paintings/sketches"
+      "Registrations should be done using college ID cards. ",
+      "Registrations are manual. ",
+      "PUBG players should be from any college students.",
+      "Every player with a team should come to the registration desk with their player ID along with their college ID card.",
+      "Entry fee Rs. 600/- (per squad -4)",
     ],
-    Note: [],
+    Note: [
+      "Participants should be from the  any department",
+      "ID card is mandatory for participation. ",
+      "If we find any hacks that team will be disqualified",
+      "They are 2 matches and participants should responsible for network and phone charging.",
+    ],
     facultyCoordinator: {
       name1: "Mr. Pawan Kalyan ",
       contact1: "+91 9493491253",
@@ -762,7 +767,7 @@ export const mobileGames: Event[] = [
     time: "7:00 PM - 11:00 PM",
     registrationDeadline: "September 10, 2025",
     entryFee: "₹600 per team",
-    teamSize: "2-4 members",
+    teamSize: "4 members",
     registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   }
 ];
