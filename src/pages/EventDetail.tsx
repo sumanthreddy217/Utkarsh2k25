@@ -189,14 +189,13 @@ const EventDetail = () => {
                     {event.prize2 && (
                       <div className="text-center">
                         <div className="text-3xl font-bold text-primary mb-1">
-                        {event.prize2}
+                          {event.prize2}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          2nd Prize Pool
+                        </div>
                       </div>
-                      <div className="text-sm text-muted-foreground">
-                        2nd Prize Pool
-                      </div>
-                    </div>
                     )}
-                    
                   </div>
 
                   <Separator />
@@ -235,13 +234,14 @@ const EventDetail = () => {
                     className="w-full"
                     variant="hero"
                     onClick={() =>
-                      window.open("https://forms.gle/m4XBzZie6bs1vd9K6", "_blank")
+                      window.open(
+                        "https://forms.gle/m4XBzZie6bs1vd9K6",
+                        "_blank"
+                      )
                     }
                   >
                     Register Now
                   </Button>
-
-                  
                 </CardContent>
               </Card>
 
@@ -276,6 +276,22 @@ const EventDetail = () => {
                       </span>
                     </div>
                   </div>
+
+                  <Separator />
+
+                  {event.facultyCoordinator.name3 && (
+                    <div className="space-y-2">
+                      <div className="font-semibold">
+                        {event.facultyCoordinator.name3}
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Phone className="h-4 w-4 text-primary" />
+                        <span className="text-sm">
+                          {event.facultyCoordinator.contact3}
+                        </span>
+                      </div>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
 
@@ -313,39 +329,39 @@ const EventDetail = () => {
 
                   <Separator />
 
-                  {event.studentCoordinator.name3 && event.studentCoordinator.contact3 && (
-                    <div className="space-y-2">
-                    <div className="font-semibold">
-                      {event.studentCoordinator.name3}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm">
-                        {event.studentCoordinator.contact3}
-                      </span>
-                    </div>
-                  </div>
-                  )}
+                  {event.studentCoordinator.name3 &&
+                    event.studentCoordinator.contact3 && (
+                      <div className="space-y-2">
+                        <div className="font-semibold">
+                          {event.studentCoordinator.name3}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Phone className="h-4 w-4 text-primary" />
+                          <span className="text-sm">
+                            {event.studentCoordinator.contact3}
+                          </span>
+                        </div>
+                      </div>
+                    )}
 
                   <Separator />
 
-                  {event.studentCoordinator.name4 && event.studentCoordinator.contact4 && (
-                    <div className="space-y-2">
-                    <div className="font-semibold">
-                      {event.studentCoordinator.name4}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm">
-                        {event.studentCoordinator.contact4}
-                      </span>
-                    </div>
-                  </div>
-                  )}
-                  
+                  {event.studentCoordinator.name4 &&
+                    event.studentCoordinator.contact4 && (
+                      <div className="space-y-2">
+                        <div className="font-semibold">
+                          {event.studentCoordinator.name4}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Phone className="h-4 w-4 text-primary" />
+                          <span className="text-sm">
+                            {event.studentCoordinator.contact4}
+                          </span>
+                        </div>
+                      </div>
+                    )}
                 </CardContent>
               </Card>
-
             </div>
           </div>
         </div>
