@@ -67,7 +67,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm">+91 96666 42377</p>
+                <p className="text-gray-700 text-sm">+91 </p>
               </CardContent>
             </Card>
 
