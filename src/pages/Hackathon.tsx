@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import hackathon from "@/assets/hero-banner.jpg"; // update this path as you needed
+import hackathon from "@/assets/hackathon.png"; // update this path as you needed
 
 // need to set 2 googlr forms link
 
@@ -37,24 +37,24 @@ const HackathonPage: React.FC = () => {
       "Eligibility: Open to all college students across India",
       "Department Requirement: All members must be from the same department",
       "Certificates will be awarded to all participants.",
-      "For Swarnandhra College Students Enter Fee ₹200 Per Head"
+      "For Swarnandhra College Students Entry Fee ₹200 Per Head"
     ],
     prize: "₹75,000",
     entryFee: "₹300 Per Head",
     teamSize: "2-4 members",
     registrationDeadline: "September 4, 2025",
     facultycoordinator: {
-      name1: "D Raghava",
-      contact1: "+91 9059088332",
-      name2:"K Vinay",
-      contact2:"+91 8374936876",
+      name1: "Mr. Kondaveti Raja",
+      contact1: "+91 9963744490",
+      name2:"Mr. CH R K Raja",
+      contact2:" +91 9000266299",
     },
     studentcoordinator: {
-      name1: "D Raghava",
+      name1: "D. Raghava",
       contact1: "+91 9059088332",
       name2: "I. Swathi",
       contact2: "+91 9347550698",
-      name3:"K Vinay",
+      name3:"K. Vinay Kumar Reddy",
       contact3: "+91 8374936876",
       name4:"B. Indu",
       contact4: "+91 8247031525",
@@ -93,7 +93,7 @@ const HackathonPage: React.FC = () => {
               </div>
             </div>
             <a
-              href="https://forms.gle/qBfu5Qwov2wrf3gd8"  //Google form link here
+              href="https://forms.gle/yeptw6jAhVdPs2ps5 "
               target="_blank"
               className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
             >
@@ -231,8 +231,7 @@ const HackathonPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* samr google form link need here also */}
-                  <Button className="w-full" variant="hero" onClick={() => window.open("https://forms.gle/qBfu5Qwov2wrf3gd8", "_blank")}>
+                  <Button className="w-full" variant="hero" onClick={() => window.open("https://forms.gle/yeptw6jAhVdPs2ps5 ", "_blank")}>
                     Register Now
                   </Button>
                 </CardContent>

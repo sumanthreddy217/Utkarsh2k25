@@ -43,7 +43,6 @@ const EventSection = ({
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 pt-10 sm:px-6 lg:px-8">
-        
         {/* Section Header with Title and Button */}
         {showHeader && (
           <>
@@ -53,7 +52,11 @@ const EventSection = ({
               {/* Show button only if not online-games */}
               {showViewAll && category !== "mobile-games" && (
                 <Link to={`/${category}-events`}>
-                  <Button variant="outline" size="sm" className="whitespace-nowrap bg-white">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="whitespace-nowrap bg-white"
+                  >
                     View All {title}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -105,7 +108,7 @@ const EventSection = ({
                   <div className="flex items-center gap-2 col-span-2">
                     <Trophy className="h-4 w-4 text-primary" />
                     <span className="text-muted-foreground">
-                      Prize: {event.prize}
+                      Total Prize Pool : {event.prize}
                     </span>
                   </div>
                 </div>

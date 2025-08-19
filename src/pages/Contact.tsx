@@ -34,13 +34,14 @@ import { useState } from "react";
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-indigo-50 py-10 pt-20">
-      <Navbar/>
+      <Navbar />
       <div className="max-w-5xl mx-auto px-4 mt-10">
         <h1 className="text-4xl font-bold text-center text-indigo-700 mb-4">
           Get in Touch
         </h1>
         <p className="text-center text-gray-600 mb-12">
-          Have questions about our college fest? Reach out using the form or details below.
+          Have questions about our college fest? Reach out using the form or
+          details below.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -54,7 +55,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm">swarnandhra@gmail.com</p>
+                <p className="text-gray-700 text-sm">ithod@swarnandhra.ac.in</p>
               </CardContent>
             </Card>
 
@@ -66,7 +67,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm">+91 XXXXX XXXXX</p>
+                <p className="text-gray-700 text-sm">+91 96666 42377</p>
               </CardContent>
             </Card>
 
@@ -79,7 +80,8 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 text-sm">
-                  Swarnandhra College of Engineering and technology, <br /> Narsapur, West Godavari, Andhra Pradesh
+                  Swarnandhra College of Engineering and technology, <br />{" "}
+                  Narsapur, West Godavari, Andhra Pradesh
                 </p>
               </CardContent>
             </Card>
@@ -88,7 +90,9 @@ const Contact = () => {
           {/* Right Column with Contact Form */}
           <Card className="shadow-lg hover:shadow-xl transition flex flex-col justify-between bg-white/90 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-emerald-700">Send us a Message</CardTitle>
+              <CardTitle className="text-emerald-700">
+                Send us a Message
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">

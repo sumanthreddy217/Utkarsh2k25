@@ -1,7 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import EventSection from "@/components/EventSection";
-import { technicalEvents, nonTechnicalEvents, mobileGames } from "@/data/events";
+import {
+  technicalEvents,
+  nonTechnicalEvents,
+  mobileGames,
+} from "@/data/events";
 import { Element } from "react-scroll";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -16,8 +20,8 @@ const Index = () => {
   useEffect(() => {
     if (location.hash) {
       const target = document.querySelector(location.hash);
-        if (target) {
-          setTimeout(() => {
+      if (target) {
+        setTimeout(() => {
           target.scrollIntoView({ behavior: "smooth" });
         }, 0);
       }
@@ -29,8 +33,11 @@ const Index = () => {
       <Navbar />
       <Hero />
 
-      {/* Featured Events */} 
-      <div className="bg-gradient-to-tr from-emerald-200 via-white to-indigo-200" id="technical-events">
+      {/* Featured Events */}
+      <div
+        className="bg-gradient-to-tr from-emerald-200 via-white to-indigo-200"
+        id="technical-events"
+      >
         <EventSection
           title="Technical Events"
           events={featuredTechnicalEvents}
@@ -42,7 +49,7 @@ const Index = () => {
 
       <div className="bg-gradient-to-br from-emerald-200 via-white to-indigo-200">
         <EventSection
-          title="Non-Technical Events"
+          title="Crazy Events"
           events={featuredNonTechnicalEvents}
           category="non-technical"
           showViewAll={true}
@@ -51,7 +58,10 @@ const Index = () => {
       </div>
 
       <Element name="mobile-games">
-        <div className="bg-gradient-to-tr from-emerald-200 via-white to-indigo-200" id="mobileGames">
+        <div
+          className="bg-gradient-to-tr from-emerald-200 via-white to-indigo-200"
+          id="mobileGames"
+        >
           <EventSection
             title="Mobile Games"
             events={featuredMobileGames}
@@ -66,10 +76,13 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div>
-              <h3 className="text-lg font-bold mb-4 text-purple-500">UTKARSH 2025</h3>
+              <h3 className="text-lg font-bold mb-4 text-purple-500">
+                UTKARSH 2025
+              </h3>
               <p className="text-primary-foreground/80">
-                A Three Day National Technical Fest where students can experience Tech, Creativity and Enjoyment. Join
-                us for an unforgettable experience!
+                A Three Day National Technical Fest where students can
+                experience Tech, Creativity and Enjoyment. Join us for an
+                unforgettable experience!
               </p>
             </div>
           </div>

@@ -20,7 +20,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About Fest", href: "/about" },
     { name: "Technical Events", href: "/technical-events" },
-    { name: "Non Technical Events", href: "/non-technical-events" },
+    { name: "Crazy Events", href: "/non-technical-events" },
     { name: "Mobile Games", href: "/#mobileGames" },
     { name: "Hackathon", href: "/hackathon" },
     { name: "Contact", href: "/contact" },
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const eventsItems = [
     { name: "Technical Events", href: "/technical-events" },
-    { name: "Non Technical Events", href: "/non-technical-events" },
+    { name: "Crazy Events", href: "/non-technical-events" },
     { name: "Mobile Games", href: "/#mobileGames" },
   ];
 
@@ -183,8 +183,6 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-
-              
             </div>
           </div>
         )}

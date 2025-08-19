@@ -231,29 +231,17 @@ const EventDetail = () => {
                     </div>
                   </div>
 
-                  {/* <Button
-                    className="w-full"
-                    variant="hero"
-                    onClick={() =>
-                      window.open("event.registrationLink", "_blank")
-                    }
-                  >
-                    Register Now
-                  </Button> */}
-
                   <Button
                     className="w-full"
                     variant="hero"
-                    onClick={() => {
-                      if (event.registrationLink) {
-                        window.open(event.registrationLink, "_blank");
-                      } else {
-                        alert("Registration link not available yet.");
-                      }
-                    }}
+                    onClick={() =>
+                      window.open("https://forms.gle/m4XBzZie6bs1vd9K6", "_blank")
+                    }
                   >
                     Register Now
                   </Button>
+
+                  
                 </CardContent>
               </Card>
 
@@ -358,45 +346,6 @@ const EventDetail = () => {
                 </CardContent>
               </Card>
 
-
-
-              {/* Quick Info
-              <Card>
-                <CardHeader>
-                  <CardTitle>Quick Info</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-primary" />
-                    <div>
-                      <div className="font-semibold text-sm">Date</div>
-                      <div className="text-sm text-muted-foreground">
-                        {event.date}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-primary" />
-                    <div>
-                      <div className="font-semibold text-sm">Time</div>
-                      <div className="text-sm text-muted-foreground">
-                        {event.time}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-primary" />
-                    <div>
-                      <div className="font-semibold text-sm">Venue</div>
-                      <div className="text-sm text-muted-foreground">
-                        {event.venue}
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card> */}
             </div>
           </div>
         </div>

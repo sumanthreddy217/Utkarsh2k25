@@ -1,17 +1,18 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { FaLaptopCode, FaGamepad, FaLightbulb, FaFilm } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 import festPoster from "@/assets/festPoster.png";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import ConfettiExplosion from "react-confetti-explosion";
-
+import intro from "@/assets/intro.mp4";
 
 const departments = [
-  "Information Technology", 2000,
-  "CSE - Data Science", 2000,
+  "Information Technology",
+  2000,
+  "CSE - Data Science",
+  2000,
 ];
-
 
 const AboutFest = () => {
   const [isExploding, setIsExploding] = useState(false);
@@ -22,7 +23,6 @@ const AboutFest = () => {
     const timer = setTimeout(() => setIsExploding(false), 4000);
     return () => clearTimeout(timer);
   }, []);
-
 
   return (
     <section className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white py-20 px-6">
@@ -47,12 +47,14 @@ const AboutFest = () => {
             Utkarsh 2025
           </h1>
           <p className="mt-2 text-white text-lg md:text-2xl text-semibold">
-            Organizing by Students of <TypeAnimation
+            Organizing by Students of <br />{" "}
+            <TypeAnimation
               sequence={departments}
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="text-purple-500 font-bold" />
+              className="text-purple-500 font-bold"
+            />
           </p>
           <p className="mt-2 text-sm md:text-lg text-blue-300 text-semibold">
             Swarnandhra College of Engineering and Technology
@@ -86,7 +88,7 @@ const AboutFest = () => {
         {/* Description Box */}
         <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-xl p-8 mb-16 border border-indigo-500/20">
           <p className="text-lg text-indigo-100 mb-4">
-            <strong className="text-pink-300">Utkarsh 2k25</strong> is a
+            <strong className="text-pink-300">Utkarsh 2025</strong> is a
             Three-day celebration of creativity, competition, and community.
             From tech brilliance to informal madness, it’s where ideas come
             alive.
@@ -99,7 +101,7 @@ const AboutFest = () => {
         </div>
 
         {/* Fest Teaser Video... "if there is an video" */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -108,12 +110,15 @@ const AboutFest = () => {
         >
           <video
             controls
+            autoPlay
+            muted
+            loop
             className="w-full max-w-4xl rounded-xl shadow-lg border border-pink-500/30"
           >
-            <source src="/assets/utkarsh-teaser.mp4" type="video/mp4" />
+            <source src={intro} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </motion.div> */}
+        </motion.div>
 
         {/* Animated Divider */}
         <div className="h-1 w-40 mx-auto bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full animate-pulse mb-16"></div>
@@ -134,7 +139,7 @@ const AboutFest = () => {
               icon: "🧠",
               items: [
                 "UI/UX Design",
-                "Extreme Result",
+                "Extreme Result (Crazy Output)",
                 "Slide Deck (PPT)",
                 "Questioning Enquiry (Quiz)",
                 "Bill Board (Poster-Presentation)",
@@ -143,14 +148,14 @@ const AboutFest = () => {
               ],
             },
             {
-              title: "Non-Technical Events",
+              title: "Crazy Events",
               icon: "🎭",
               items: [
                 "Chess",
                 "Sudoku",
                 "Treasure Hunt",
                 "Photo Booth Contest",
-                "Videography Contest",
+                "Short Film Contest",
               ],
             },
             {
