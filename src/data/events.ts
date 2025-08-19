@@ -96,7 +96,7 @@ export const technicalEvents: Event[] = [
     ],
     facultyCoordinator: {
       name1: "Mrs. P Tejaswi",
-      contact1: "+91 ",
+      contact1: "+91 9030880141",
       name2: "Mrs J.N.D. Lakshmi",
       contact2: "+91 8187879500",
       name3: "Mr. V Manikanta",
@@ -127,9 +127,9 @@ export const technicalEvents: Event[] = [
     category: "technical",
     date: "From 9th Sept",
     participants: 3,
-    prize: "₹3,000",
-    prize1: "₹2,000",
-    prize2: "₹1,000",
+    prize: "₹4,500",
+    prize1: "₹3,000",
+    prize2: "₹1,500",
     image: questioningEnquiry,
     fullDescription:
       "This contest challenges teams to showcase their problem-solving and technical knowledge across multiple rounds. It includes multiple-choice questions, hardware visuals, and logo identifications to keep it engaging and competitive. Each team can have a maximum of 3 members, and mobiles or electronic devices are strictly not allowed. The event consists of 3 rounds: two written tests (30 minutes each) and a final visual buzzer round (1 minute per question). Top 8 teams will qualify for the finals, and the decision of the quiz master will be final.",
@@ -153,7 +153,7 @@ export const technicalEvents: Event[] = [
       name1: "Mr. K. Bhanu Chand",
       contact1: "+91 9160984527",
       name2: "Mrs. M. Pavani",
-      contact2: "+91 ",
+      contact2: "+91 6301673147",
       name3: "",
       contact3: "",
     },
@@ -182,9 +182,9 @@ export const technicalEvents: Event[] = [
     category: "technical",
     date: "From 9th Sept",
     participants: 1,
-    prize: "₹3,000",
-    prize1: "₹2,000",
-    prize2: "₹1,000",
+    prize: "₹4,000",
+    prize1: "₹2,500",
+    prize2: "₹1,500",
     image: billBoard,
     fullDescription:
       "This event provides a platform for participants to showcase their technical knowledge using visual posters rather than text-heavy slides. It focuses on creativity, clarity, and the ability to explain concepts effectively within a short duration. The contest is for individual participation, and each participant will have 5 minutes to present their poster. Posters should be simple, with light backgrounds, limited text, and no more than 3 colors and 3 fonts. Participants are expected to maintain eye contact, use hand gestures, and explain their ideas clearly during the presentation.",
@@ -225,7 +225,7 @@ export const technicalEvents: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "₹100 per Head",
-    teamSize: "Single",
+    teamSize: "1",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -236,9 +236,9 @@ export const technicalEvents: Event[] = [
     category: "technical",
     date: "From 9th Sept",
     participants: 3,
-    prize: "₹6,000",
-    prize1: "₹3,500",
-    prize2: "₹2,500",
+    prize: "₹7,000",
+    prize1: "₹4,000",
+    prize2: "₹3,000",
     image: slideDeck,
     fullDescription:
       "This contest provides a stage for participants to present technical topics effectively using well-structured slides and confident delivery. It encourages clear communication, technical depth, and engaging presentation style. Teams of up to 3 members must prepare 12–15 slides and deliver their presentation within 10–15 minutes. Participants should bring their own laptops and present with confidence, maintaining eye contact and using hand gestures. Registration will be done online through the official website.",
@@ -277,7 +277,7 @@ export const technicalEvents: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "₹200 per Head",
-    teamSize: "3 members",
+    teamSize: "2 members",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -288,9 +288,9 @@ export const technicalEvents: Event[] = [
     category: "technical",
     date: "From 9th Sept",
     participants: 3,
-    prize: "₹6,000",
-    prize1: "₹3,500",
-    prize2: "₹2,500",
+    prize: "₹7,000",
+    prize1: "₹4,000",
+    prize2: "₹3,000",
     image: projectExpo,
     fullDescription:
       "This event encourages participants to present their technical projects highlighting concept, methodology, and conclusions through detailed project reports. It emphasizes innovation, problem-solving, and the ability to communicate technical ideas effectively. Teams can have up to 3 members and must present their project within 10 minutes using visual aids such as posters, models, or digital presentations. Participants are expected to maintain eye contact and hand gestures while explaining, focusing on judges rather than just the screen. They must also be prepared to answer questions from judges, and registration will be completed online through the official website.",
@@ -332,7 +332,7 @@ export const technicalEvents: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "₹200 per Team",
-    teamSize: "2-3 members",
+    teamSize: "2 members",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -384,7 +384,7 @@ export const technicalEvents: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "₹100 per Head",
-    teamSize: "Single",
+    teamSize: "1",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -442,9 +442,9 @@ export const nonTechnicalEvents: Event[] = [
     category: "non-technical",
     date: "From 9th Sept", // need to change
     participants: 3,
-    prize: "₹2,000",
+    prize: "₹3,000",
     prize1: "₹2,000",
-    prize2: "",
+    prize2: "1,000",
     image: treasureHunt,
     fullDescription:
       "The Treasure Hunt is a thrilling campus-wide challenge designed to test your teamwork, problem-solving, and navigation skills. Participants will follow a trail of verbal clues scattered across the college, solving riddles and completing tasks to reach the final treasure.",
@@ -574,7 +574,7 @@ export const nonTechnicalEvents: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "No Fee",
-    teamSize: "NO Need",
+    teamSize: "1",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -621,7 +621,7 @@ export const nonTechnicalEvents: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "₹100 per Head",
-    teamSize: "Single",
+    teamSize: "1",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -684,9 +684,9 @@ export const mobileGames: Event[] = [
     category: "mobile-games",
     date: "From 9th Sept",
     participants: 1,
-    prize: "₹4,500",
-    prize1: "₹3,000",
-    prize2: "₹1,500",
+    prize: "₹2,500",
+    prize1: "₹1,500",
+    prize2: "₹1,000",
     image: LUDO,
     fullDescription:
       "This event brings excitement and strategy as players compete in two-player Ludo matches conducted online. It is designed for individual participation, with matches played directly on participants’ own mobile devices. The event will be coordinated via a WhatsApp group, where match updates and communication will be shared. After each match, winners must submit a screenshot of their victory to qualify for the next round. The final winners will be decided in the last round, while organizers will not be responsible for technical issues like network or device problems.",
@@ -722,7 +722,7 @@ export const mobileGames: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "₹100 per Head",
-    teamSize: "Single",
+    teamSize: "1",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -733,8 +733,8 @@ export const mobileGames: Event[] = [
     category: "mobile-games",
     date: "From 9th Sept",
     participants: 4,
-    prize: "₹5,000",
-    prize1: "₹3,000",
+    prize: "₹6,000",
+    prize1: "₹4,000",
     prize2: "₹2,000",
     image: freeFire,
     fullDescription:
@@ -773,7 +773,7 @@ export const mobileGames: Event[] = [
     time: "9:00 AM - 4:00 PM",
     registrationDeadline: "September 4, 2025",
     entryFee: "₹600 per team",
-    teamSize: "2-4 members",
+    teamSize: "4 members",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
   {
@@ -784,8 +784,8 @@ export const mobileGames: Event[] = [
     category: "mobile-games",
     date: "From 9th Sept",
     participants: 4,
-    prize: "₹5,000",
-    prize1: "₹3,000",
+    prize: "₹6,000",
+    prize1: "₹4,000",
     prize2: "₹2,000",
     image: PUBG,
     fullDescription:
