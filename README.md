@@ -18,7 +18,7 @@ This project is built with:
 
 ## 🚀 Live Preview
 
-👉 [Visit the Website](https://utkarsh2k25.swarnandhra.ac.in)
+👉 [Visit the Website](https://www.swarnandhra.ac.in/utkarsh2025)
 
 ---
 
