@@ -6,6 +6,25 @@
 All colors MUST be HSL.
 */
 
+@font-face {
+  font-family: 'Saman';
+  src: url('../src/assets/SAMAN.TTF') format('truetype');
+}
+
+.utkarsh-title {
+  font-family: 'Saman', sans-serif;
+}
+
+@font-face {
+  font-family: 'Ethnocentric';
+  src: url('../src/assets/Ethnocentric Rg.otf') format('truetype');
+}
+
+.hacksprint-title {
+  font-family: 'Ethnocentric', sans-serif;
+}
+
+
 @layer base {
 
   :root {

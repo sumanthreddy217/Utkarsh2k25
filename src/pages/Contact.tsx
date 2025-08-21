@@ -5,33 +5,38 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { useState } from "react";
-
-// With Email.js to Make this page non-function to functional page
-// const [formData, setFormData] = useState({
-//   name: "",
-//   email: "",
-//   message: "",
-// });
-
-// // Every time the user types, you update the state:
-// const handleChange = (e) => {
-//   setFormData((prev) => ({
-//     ...prev,
-//     [e.target.name]: e.target.value,
-//   }));
-// };
-
-// // When the user clicks “Submit,” this function runs
-// const handleSubmit = (e) => {
-//   e.preventDefault(); // prevents page reload
-
-//   console.log("Form submitted:", formData); // logs the data
-//   alert("Message sent successfully!"); // shows a popup
-
-//   setFormData({ name: "", email: "", message: "" }); // clears the form
-// };
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  // const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_iumyn1q', 'template_9cm92zs', form.current, {
+        publicKey: '6wVkcE2vFBtbWfa8c',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert("Message Sent Successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          // console.log('FAILED...', error.text);
+          // alert("Failed to Sent Message, Please try again.", error.text);
+          const errorMsg = error?.text || error?.message || 'Unknown error';
+          console.log('FAILED...', errorMsg);
+          alert(`Failed to Send Message. Please try again.\n${errorMsg}`);
+        },
+      );
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-indigo-50 py-10 pt-20">
       <Navbar />
@@ -67,7 +72,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm">+91 </p>
+                <p className="text-gray-700 text-sm">+91 9700149259</p>
               </CardContent>
             </Card>
 
@@ -81,7 +86,7 @@ const Contact = () => {
               <CardContent>
                 <p className="text-gray-700 text-sm">
                   Swarnandhra College of Engineering and technology, <br />{" "}
-                  Narsapur, West Godavari, Andhra Pradesh
+                  Seetharampuram, Narsapur, West Godavari, Andhra Pradesh - 534280
                 </p>
               </CardContent>
             </Card>
@@ -95,10 +100,10 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
-                <Input placeholder="Your Name" required />
-                <Input type="email" placeholder="Your Email" required />
-                <Textarea placeholder="Your Message" rows={4} required />
+              <form ref={form} onSubmit={sendEmail} className="space-y-4">
+                <Input placeholder="Your Name" name="user_name" required />
+                <Input type="email" placeholder="Your Email" name="user_email" required />
+                <Textarea placeholder="Your Message" rows={4} name="message" required />
                 <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
                   Submit
                 </Button>

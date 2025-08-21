@@ -7,12 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 import ConfettiExplosion from "react-confetti-explosion";
 import intro from "@/assets/intro.mp4";
 
-const departments = [
-  "Information Technology",
-  2000,
-  "CSE - Data Science",
-  2000,
-];
+const departments = ["IT", 2000, "CSE - DS", 2000];
 
 const AboutFest = () => {
   const [isExploding, setIsExploding] = useState(false);
@@ -42,12 +37,19 @@ const AboutFest = () => {
 
       <div className="max-w-6xl mx-auto py-5">
         {/* Hero Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl md:text-6xl utkarsh-title font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
             Utkarsh 2025
           </h1>
+          <p className="mt-2 text-sm md:text-xl text-blue-300 text-semibold">
+            Department of Information Technology <br />
+            Swarnandhra College of Engineering and Technology
+          </p>
+           <p className="mt-2 text-white text-lg md:text-2xl text-semibold">
+            Organizing by students of
+          </p>
           <p className="mt-2 text-white text-lg md:text-2xl text-semibold">
-            Organizing by Students of <br />{" "}
+             {""}
             <TypeAnimation
               sequence={departments}
               wrapper="span"
@@ -55,9 +57,7 @@ const AboutFest = () => {
               repeat={Infinity}
               className="text-purple-500 font-bold"
             />
-          </p>
-          <p className="mt-2 text-sm md:text-lg text-blue-300 text-semibold">
-            Swarnandhra College of Engineering and Technology
+            
           </p>
         </div>
 
@@ -76,31 +76,38 @@ const AboutFest = () => {
           />
         </motion.div>
 
-        {/* Non Animated Fest Poster */}
-        {/* <div className="mb-16 flex justify-center">
-          <img
-            src={festPoster}
-            alt="Utkarsh 2K25 Fest Poster"
-            className="w-full h-full max-w-3xl rounded-xl shadow-lg border border-indigo-500/30"
-          />
-        </div> */}
-
         {/* Description Box */}
         <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-xl p-8 mb-16 border border-indigo-500/20">
-          <p className="text-lg text-indigo-100 mb-4">
-            <strong className="text-pink-300">Utkarsh 2025</strong> is a
-            Three-day celebration of creativity, competition, and community.
-            From tech brilliance to informal madness, it’s where ideas come
-            alive.
-          </p>
-          <p className="text-lg text-indigo-100">
-            Cash prizes (Winner & Runner), exclusive showcases, and
-            unforgettable moments await. Some events are open to all colleges,
-            others are Swarnandhra exclusives.
-          </p>
+          <ul className="list-disc pl-6">
+            <li className="text-lg text-indigo-100 mb-4">
+              <p><strong className="text-pink-300">Utkarsh 2025</strong> is a
+              Three-day celebration of creativity, competition, and community.
+              From tech brilliance to informal madness, it’s where ideas come alive.</p>
+            
+            </li>
+            
+            <li className="text-lg text-indigo-100 mb-4">
+              <p>Cash prizes (Winner & Runner), exclusive showcases, and
+              unforgettable moments await. Participants from institutes which
+              have national importance like IITs, NITs & IIITs any where in
+              India can reimburse one way Sleeper class fare (Indian Railways)</p>  
+            </li>
+            
+            <li className="text-lg text-indigo-100 mb-4">
+              <p>
+                 One way travel fare (Sleeper Class in Indian Railways) can be
+                reimbursed by the participants from other than Andhra and
+                Telangana states
+              </p>
+            </li>
+
+            <li className="text-lg text-indigo-100 mb-4">
+              <p>Food and Accommodation is Provided at free of cost for all the participants (excluding host college)</p> 
+            </li>
+          </ul>
         </div>
 
-        {/* Fest Teaser Video... "if there is an video" */}
+        {/* Fest Teaser Video */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

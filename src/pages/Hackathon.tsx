@@ -11,19 +11,18 @@ import hackathon from "@/assets/hackathon.png"; // update this path as you neede
 const HackathonPage: React.FC = () => {
 
   const event = {
-    title: "HackSprint",
+    title: "HACKSPRINT",
     description: "A 24-hour National coding marthon to innovate, collaborate, and conquer real-world challenges.",
     category: "technical",
     fullDescription:
       "The National Hackathon is a 24-hour coding and innovation marathon aimed at fostering creativity, problem-solving, and teamwork among college students across the nation. Organized by the Department of Information Technology at Swarnandhra College of Engineering and Technology, this event offers a platform for students to showcase their technical skills and innovative ideas.",
     rules: [
-      "Teams must have at least 4 members, all from the same department.",
-      "All participants must be currently enrolled college students.",
-      "The hackathon will run continuously for 24 hours; participants should be prepared to stay on campus during this period.",
-      "All work must be original; plagiarism will result in immediate disqualification.",
+      "Team size 2-4 members, All participants must be pursuing from the same Institute.",
+      "The hackathon will run continuously for 24 hours, participants should be prepared to stay on campus during this period.",
+      "All work must be original, high plagiarism will result in immediate disqualification.",
       "Participants should bring their own laptops and required accessories.",
       "Respectful behavior and adherence to the code of conduct are mandatory.",
-      "Snacks will be provided by the organizers.",
+      "Lunch, Snacks & Dinner will be provided.",
     ],
     domains: [
       "Cyber Security and Privacy",
@@ -35,18 +34,17 @@ const HackathonPage: React.FC = () => {
     ],
     note: [
       "Eligibility: Open to all college students across India",
-      "Department Requirement: All members must be from the same department",
       "Certificates will be awarded to all participants.",
-      "For Swarnandhra College Students Entry Fee ₹200 Per Head"
     ],
     prize: "₹75,000",
-    entryFee: "₹300 Per Head",
+    entryFee: "₹300 Per Head ",
+    note2: "₹200 Per Head",
     teamSize: "2-4 members",
     registrationDeadline: "September 4, 2025",
     facultycoordinator: {
       name1: "Mr. Kondaveti Raja",
       contact1: "+91 9963744490",
-      name2:"Mr. CH R K Raja",
+      name2:"Mr. Ch R K Raju",
       contact2:" +91 9000266299",
     },
     studentcoordinator: {
@@ -59,7 +57,7 @@ const HackathonPage: React.FC = () => {
       name4:"B. Indu",
       contact4: "+91 8247031525",
     },
-    date: "10th Sept - 11th Sept, 2025",
+    // date:  "10th Sept - 11th Sept, 2025",
     time: "10:00 AM – 10:00 AM",
     venue: "Swarnandhra College of Engineering and Technology",
   };
@@ -74,8 +72,8 @@ const HackathonPage: React.FC = () => {
           <div className="flex-1">
             <span className="inline-block bg-blue-100 text-blue-700 font-semibold text-sm px-3 py-1 rounded-full mb-4">
               Technical
-            </span>
-            <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white mb-3 leading-tight">
+            </span> 
+            <h1 className="text-4xl md:text-5xl hacksprint-title bg-gradient-to-r  from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent font-extrabold dark:text-white mb-3 leading-tight ">
               {event.title}
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
@@ -83,7 +81,7 @@ const HackathonPage: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-6 text-gray-700 dark:text-gray-200 mb-8 text-lg font-medium">
               <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-blue-600" /> {event.date}
+                <Calendar className="w-5 h-5 text-blue-600" /> 10<sup>th</sup> Sept - 11<sup>th</sup> Sept, 2025
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-blue-600" /> {event.time}
@@ -156,7 +154,7 @@ const HackathonPage: React.FC = () => {
                     {event.domains.map((rule, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                        <span className="text-muted-foreground">{rule}</span>
+                        <span className="font-bold">{rule}</span>
                       </li>
                     ))}
                   </ul>
@@ -196,6 +194,7 @@ const HackathonPage: React.FC = () => {
                     <div className="text-3xl font-bold text-primary mb-2">
                       {event.prize}
                     </div>
+                    
                     <div className="text-sm text-muted-foreground">
                       Prize Pool
                     </div>
@@ -210,6 +209,14 @@ const HackathonPage: React.FC = () => {
                         <span className="text-sm">Entry Fee</span>
                       </div>
                       <span className="font-semibold">{event.entryFee}</span>
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <DollarSign className="h-4 w-4 text-primary" />
+                        <span className="text-sm">For Swarnandhra Students</span>
+                      </div>
+                      <span className="font-semibold">{event.note2}</span>
                     </div>
 
                     <div className="flex items-center justify-between">

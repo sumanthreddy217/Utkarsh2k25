@@ -86,7 +86,9 @@ const EventDetail = () => {
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span>{event.date}</span>
+                  <span>
+                    From 9<sup>th</sup> Sept{" "}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-5 w-5 text-primary" />
@@ -145,6 +147,25 @@ const EventDetail = () => {
                 </CardContent>
               </Card>
 
+              {/* Themes */}
+              {event?.themes?.length > 0 && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Themes</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3">
+                      {event.themes.map((rule, index) => (
+                        <li key={index} className="flex items-start gap-3 text-bold">
+                          <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                          <span className="text-bold text-black">{rule}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              )}
+
               {/* notes */}
               <Card>
                 <CardHeader>
@@ -181,7 +202,7 @@ const EventDetail = () => {
                         {event.prize1}
                       </div>
                       <div className="text-sm text-muted-foreground">
-                        1st Prize Pool
+                        1st Prize
                       </div>
                     </div>
 
@@ -192,7 +213,7 @@ const EventDetail = () => {
                           {event.prize2}
                         </div>
                         <div className="text-sm text-muted-foreground">
-                          2nd Prize Pool
+                          2nd Prize
                         </div>
                       </div>
                     )}
@@ -251,7 +272,7 @@ const EventDetail = () => {
                   <CardTitle>Faculty Coordinator</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <div>
+                  <div className="space-y-2">
                     <div className="font-semibold">
                       {event.facultyCoordinator.name1}
                     </div>
@@ -277,7 +298,7 @@ const EventDetail = () => {
                     </div>
                   </div>
 
-                  <Separator />
+                  {event.facultyCoordinator.name3 && (<Separator />)}
 
                   {event.facultyCoordinator.name3 && (
                     <div className="space-y-2">
@@ -301,7 +322,7 @@ const EventDetail = () => {
                   <CardTitle>Student Coordinator</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <div>
+                  <div className="space-y-2">
                     <div className="font-semibold">
                       {event.studentCoordinator.name1}
                     </div>
@@ -327,7 +348,7 @@ const EventDetail = () => {
                     </div>
                   </div>
 
-                  <Separator />
+                  {event.studentCoordinator.name3 && <Separator />}
 
                   {event.studentCoordinator.name3 &&
                     event.studentCoordinator.contact3 && (
@@ -344,7 +365,7 @@ const EventDetail = () => {
                       </div>
                     )}
 
-                  <Separator />
+                  {event.studentCoordinator.name4 && <Separator />}
 
                   {event.studentCoordinator.name4 &&
                     event.studentCoordinator.contact4 && (

@@ -16,7 +16,7 @@ interface Event {
   title: string;
   description: string;
   category: "technical" | "non-technical" | "mobile-games";
-  date: string;
+  // date: string;
   participants: number;
   prize: string;
   image?: string;
@@ -55,7 +55,7 @@ const EventSection = ({
                   <Button
                     variant="outline"
                     size="sm"
-                    className="whitespace-nowrap bg-white"
+                    className="whitespace-nowrap bg-white border border-gray-800"
                   >
                     View All {title}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -97,7 +97,7 @@ const EventSection = ({
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-primary" />
-                    <span className="text-muted-foreground">{event.date}</span>
+                    <span className="text-muted-foreground">From 9<sup>th</sup> Sept</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="h-4 w-4 text-primary" />

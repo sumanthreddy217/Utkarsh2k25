@@ -19,19 +19,18 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-8">
           {/* Main Title */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold drop-shadow-lg">
-              Welcome to{" "}
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
+              Welcome to{" "} <br />
+              <span className="bg-gradient-hero utkarsh-title bg-clip-text text-transparent">
                 UTKARSH 2025
               </span>
             </h1>
-            <p className="text-lg sm:text-2xl lg:text-xl text-muted-foreground max-w-2xl mx-auto drop-shadow text-gray-700">
-              A Three Day National Technical Fest where students can experience
-              Tech, Creativity and Enjoyment.
+            <p className="text-lg sm:text-2xl lg:text-xl max-w-2xl mx-auto drop-shadow text-gray-900">
+              A Three Day National Level Technical Fest (From 9<sup>th</sup> to 11<sup>th</sup> Sept)
             </p>
           </div>
 
@@ -42,7 +41,7 @@ const Hero = () => {
             </span>
             <div className=" items-center text-center text-gray-700 text-lg font-semibold md:text-2xl sm:text-xl">
               <span className="text-3xl text-bold text-blue-700">
-                IT Department
+                Department of Information Technology
               </span>{" "}
               <br />
               Swarnandhra College of Engineering and Technology
@@ -56,7 +55,7 @@ const Hero = () => {
               size="lg"
               className="max-w-[145px] w-full sm:w-auto"
               onClick={() => {
-                const section = document.getElementById("technical-events");
+                const section = document.getElementById("hackathon");
                 if (section) {
                   section.scrollIntoView({ behavior: "smooth" });
                 }
@@ -76,7 +75,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8  transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>

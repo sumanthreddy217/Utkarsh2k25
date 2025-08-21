@@ -54,7 +54,7 @@ const Navbar = () => {
                 className="h-14 w-12 object-contain"
               />
             </div>
-            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <span className="text-2xl utkarsh-title font-bold bg-gradient-primary bg-clip-text text-transparent">
               Utkarsh 2025
             </span>
           </Link>
