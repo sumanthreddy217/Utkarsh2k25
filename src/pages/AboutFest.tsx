@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaLaptopCode, FaGamepad, FaLightbulb, FaFilm } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
-import festPoster from "@/assets/festPoster.png";
+import festPoster from "@/assets/festPoster.jpg";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import ConfettiExplosion from "react-confetti-explosion";

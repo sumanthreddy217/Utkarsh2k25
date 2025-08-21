@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import hackathon from "@/assets/hackathon.png"; // update this path as you needed
+import hackathon from "@/assets/hackathon.jpg"; // update this path as you needed
 
 // need to set 2 googlr forms link
 

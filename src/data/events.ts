@@ -365,8 +365,8 @@ export const technicalEvents: Event[] = [
       contact3: "+91 8977293858",
     },
     studentCoordinator: {
-      name1: "I. Swathi",
-      contact1: "+91 9347550698",
+      name1: "K. Priyanka",
+      contact1: "+91 9160521248",
       name2: "M. Iswarya",
       contact2: "+91 7893406224",
       name3: "A. Lokeswari",
@@ -499,7 +499,7 @@ export const nonTechnicalEvents: Event[] = [
     ],
     themes: [],
     Note: [
-      "Format: MP4 / MOV preferred.",
+      "Format: MP4 preferred.",
       "Resolution: Minimum  720p.",
       "If any vulgarity scenes are found shortfilm will be rejected.",
     ],
@@ -754,8 +754,8 @@ export const mobileGames: Event[] = [
       contact3: "",
     },
     studentCoordinator: {
-      name1: "G. Priyanka",
-      contact1: "+91 9160521248",
+      name1: "K.Bindu",
+      contact1: "+91 9032257976",
       name2: "A. Sanjana",
       contact2: "+91 8074377887",
       name3: "M. Anusha",
