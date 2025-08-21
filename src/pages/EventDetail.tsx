@@ -284,8 +284,9 @@ const EventDetail = () => {
                     </div>
                   </div>
 
-                  <Separator />
+                  {event.facultyCoordinator.name2 && (<Separator />)}
 
+                  {event.facultyCoordinator.name2 && (
                   <div className="space-y-2">
                     <div className="font-semibold">
                       {event.facultyCoordinator.name2}
@@ -296,7 +297,7 @@ const EventDetail = () => {
                         {event.facultyCoordinator.contact2}
                       </span>
                     </div>
-                  </div>
+                  </div> )}
 
                   {event.facultyCoordinator.name3 && (<Separator />)}
 

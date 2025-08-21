@@ -12,6 +12,7 @@ import treasureHunt from "@/assets/Treasure Hunt.jpg";
 import videoShoot from "@/assets/video-shoot.webp";
 import photoBooth from "@/assets/PhotoBooth.jpg";
 import chessGame from "@/assets/Chess-Game.webp";
+import rubicsCube from "@/assets/rubiks-cube.avif";
 import sudoku from "@/assets/Sudoku.jpg";
 
 //Online Games Images
@@ -663,6 +664,52 @@ export const nonTechnicalEvents: Event[] = [
       contact3: "+91 8074181904",
       name4: "K. Harini Sri",
       contact4: "+91 9398385454",
+    },
+    venue: "Swarnandhra College IT Department",
+    time: "9:00 AM - 4:00 PM",
+    registrationDeadline: "September 4, 2025",
+    entryFee: "₹100 per Head",
+    teamSize: "1 member",
+    // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
+  },
+  {
+    id: "2.6",
+    title: "Rubic's Cube",
+    description:
+      "",
+    category: "non-technical",
+    // date: "From 9th Sept",
+    participants: 1,
+    prize: "₹3,500",
+    prize1: "₹2,000",
+    prize2: "₹1,500",
+    image: rubicsCube,
+    fullDescription:
+      "The Rubik’s Cube is a classic 3D puzzle that challenges your logic, memory, and spatial reasoning. With six colorful faces and over 43 quintillion possible combinations, solving it requires strategy, patience, and a touch of brilliance. Whether you're a speedcubing pro or a curious beginner, it's more than a toy - it's a timeless brain teaser that turns frustration into fascination.",
+    rules: [
+      "This is for individual participation.",
+      "Who solve the cube first will get rewarded.",
+      "Each Participatents should bring their own cube.",
+    ],
+    themes: [],
+    Note: ["Every one can participate (No age limit)"],
+    facultyCoordinator: {
+      name1: "Mr. K. Raja ",
+      contact1: "+91 9963744490",
+      name2: "",
+      contact2: "",
+      name3: "",
+      contact3: "",
+    },
+    studentCoordinator: {
+      name1: "Chandhu",
+      contact1: "+91 7731097968",
+      name2: "P. Gangadhar",
+      contact2: "+91 8639450574",
+      name3: "",
+      contact3: "",
+      name4: "",
+      contact4: "",
     },
     venue: "Swarnandhra College IT Department",
     time: "9:00 AM - 4:00 PM",
