@@ -676,7 +676,7 @@ export const nonTechnicalEvents: Event[] = [
     id: "2.6",
     title: "Rubic's Cube",
     description:
-      "",
+      "Unlock the cube, unleash your mind - challenge, focus, solve, repeat, win.",
     category: "non-technical",
     // date: "From 9th Sept",
     participants: 1,
