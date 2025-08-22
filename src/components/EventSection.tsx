@@ -114,7 +114,7 @@ const EventSection = ({
                 size="lg"
                 className="px-6 py-3 text-base font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border-2 border-gray-800"
               >
-                View All {title}
+                View More {title}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>

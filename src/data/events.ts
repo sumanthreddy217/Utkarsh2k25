@@ -320,7 +320,7 @@ export const technicalEvents: Event[] = [
       contact2: "+91 8121930758",
       name3: "V. Hema",
       contact3: "+91 8500691429",
-      name4: "N. Hema Sri",
+      name4: "N. Hima Sri",
       contact4: "+91 9391011544",
     },
     venue: "Swarnandhra College IT Department",
