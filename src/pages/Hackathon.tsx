@@ -17,7 +17,7 @@ const HackathonPage: React.FC = () => {
     fullDescription:
       "The National Hackathon is a 24-hour coding and innovation marathon aimed at fostering creativity, problem-solving, and teamwork among college students across the nation. Organized by the Department of Information Technology at Swarnandhra College of Engineering and Technology, this event offers a platform for students to showcase their technical skills and innovative ideas.",
     rules: [
-      "Team size 2-4 members, All participants must be pursuing from the same Institute.",
+      "Team size 2-4 members, All participants must be pursuing their studies.",
       "The hackathon will run continuously for 24 hours, participants should be prepared to stay on campus during this period.",
       "All work must be original, high plagiarism will result in immediate disqualification.",
       "Participants should bring their own laptops and required accessories.",

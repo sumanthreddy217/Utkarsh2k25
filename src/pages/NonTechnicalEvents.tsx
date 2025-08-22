@@ -4,7 +4,7 @@ import { nonTechnicalEvents } from "@/data/events";
 
 const NonTechnicalEvents = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-200 via-gray-100 to-indigo-200">
       <Navbar />
 
       <div className="pt-20">
@@ -13,8 +13,12 @@ const NonTechnicalEvents = () => {
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
               Non-Technical Events
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Express your creativity and showcase your talents beyond technology
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto ">
+              Cash prizes (Winner & Runner), exclusive showcases, and unforgettable moments await. <br /> 
+
+              <hr className="my-4 border-gray-500 rounded-full" />
+              
+              Participants from institutes which have national importance like IITs, NITs & IIITs any where in India can reimburse one way Sleeper class fare (Indian Railways)
             </p>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mt-6"></div>
 

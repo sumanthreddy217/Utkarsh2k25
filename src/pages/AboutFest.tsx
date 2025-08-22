@@ -88,9 +88,15 @@ const AboutFest = () => {
             
             <li className="text-lg text-indigo-100 mb-4">
               <p>Cash prizes (Winner & Runner), exclusive showcases, and
-              unforgettable moments await. Participants from institutes which
-              have national importance like IITs, NITs & IIITs any where in
-              India can reimburse one way Sleeper class fare (Indian Railways)</p>  
+              unforgettable moments await. </p>  
+            </li>
+
+            <li className="text-lg text-indigo-100 mb-4">
+              <p>
+                Participants from institutes which
+                have national importance like IITs, NITs & IIITs any where in
+                India can reimburse one way Sleeper class fare (Indian Railways)
+              </p>
             </li>
             
             <li className="text-lg text-indigo-100 mb-4">

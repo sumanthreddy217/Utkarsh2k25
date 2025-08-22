@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import EventSection from "@/components/EventSection";
 import { technicalEvents } from "@/data/events";
+import { Separator } from "@radix-ui/react-dropdown-menu";
+
 
 const TechnicalEvents = () => {
   return (
@@ -13,11 +15,20 @@ const TechnicalEvents = () => {
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
               Technical Events
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Challenge your technical skills and compete with the best minds in technology
+
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto ">
+              Cash prizes (Winner & Runner), exclusive showcases, and unforgettable moments await. <br /> 
+
+              <hr className="my-4 border-gray-500 rounded-full" />
+              
+              Participants from institutes which have national importance like IITs, NITs & IIITs any where in India can reimburse one way Sleeper class fare (Indian Railways)
+              
             </p>
+
+
+
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mt-6"></div>
-            
+
             <EventSection
               title="All Technical Events"
               events={technicalEvents}
@@ -26,8 +37,6 @@ const TechnicalEvents = () => {
               showHeader={false}
             />
           </div>
-          
-          
         </div>
       </div>
     </div>

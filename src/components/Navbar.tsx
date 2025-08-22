@@ -131,7 +131,7 @@ const Navbar = () => {
                   ? "text-white"
                   : isActive("/hackathon")
                   ? "text-primary bg-primary/10 px-3 py-1 rounded-md"
-                  : "text-muted-foreground hover:text-primary"
+                  : "text-muted-black hover:text-primary"
               }`}
             >
               Hackathon
