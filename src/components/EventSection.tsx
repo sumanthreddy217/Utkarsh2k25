@@ -16,7 +16,6 @@ interface Event {
   title: string;
   description: string;
   category: "technical" | "non-technical" | "mobile-games";
-  // date: string;
   participants: number;
   prize: string;
   image?: string;
@@ -43,30 +42,12 @@ const EventSection = ({
   return (
     <section className="py-1 pb-14">
       <div className="max-w-7xl mx-auto px-4 pt-10 sm:px-6 lg:px-8">
-        {/* Section Header with Title and Button */}
+        {/* Section Header */}
         {showHeader && (
-          <>
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-5">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-2">{title}</h2>
-
-              {/* Show button only if not online-games */}
-              {showViewAll && category !== "mobile-games" && (
-                <Link to={`/${category}-events`}>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="whitespace-nowrap bg-white border border-gray-800"
-                  >
-                    View All {title}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              )}
-            </div>
-
-            {/* Decorative Line Under Title */}
-            <div className="w-24 h-1 bg-gradient-primary rounded-full mb-14"></div>
-          </>
+          <div className="flex flex-col items-center text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">{title}</h2>
+            <div className="w-24 h-1 bg-gradient-primary rounded-full mb-10"></div>
+          </div>
         )}
 
         {/* Events Grid */}
@@ -93,11 +74,12 @@ const EventSection = ({
               </CardHeader>
 
               <CardContent className="space-y-4">
-                {/* Event Details */}
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-primary" />
-                    <span className="text-muted-foreground">From 9<sup>th</sup> Sept</span>
+                    <span className="text-muted-foreground">
+                      From 9<sup>th</sup> Sept
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="h-4 w-4 text-primary" />
@@ -113,7 +95,6 @@ const EventSection = ({
                   </div>
                 </div>
 
-                {/* CTA Button */}
                 <Link to={`/event/${event.id}`} className="block">
                   <Button variant="event" className="w-full group/btn">
                     View Details
@@ -124,6 +105,21 @@ const EventSection = ({
             </Card>
           ))}
         </div>
+
+        {/* View All Button Below Cards */}
+        {showViewAll && category !== "mobile-games" && (
+          <div className="mt-12 flex justify-center">
+            <Link to={`/${category}-events`}>
+              <Button
+                size="lg"
+                className="px-6 py-3 text-base font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border-2 border-gray-800"
+              >
+                View All {title}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

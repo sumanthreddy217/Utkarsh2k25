@@ -479,7 +479,7 @@ export const nonTechnicalEvents: Event[] = [
   },
   {
     id: "2.2",
-    title: "Short Flim",
+    title: "Short Film",
     description:
       "I love editing. It’s one of my favourite parts about video making.",
     category: "non-technical",
@@ -496,12 +496,14 @@ export const nonTechnicalEvents: Event[] = [
       "Shortfilm should not exceed 5 minutes.",
       "Any medium is allowed.",
       "The Theme is your choice, but no vulgarity and discriminatory content.",
+      "If any vulgarity scenes are found shortfilm will be rejected.",
     ],
     themes: [],
     Note: [
       "Format: MP4 preferred.",
       "Resolution: Minimum  720p.",
-      "If any vulgarity scenes are found shortfilm will be rejected.",
+      "The deadline for your video Submission is 7th Sept 2025",
+      "We will provide Submission and payment details after (Registration Ends) 4th Sept 2025",
     ],
     facultyCoordinator: {
       name1: "Mr. K. Nagendra Babu",
@@ -718,7 +720,6 @@ export const nonTechnicalEvents: Event[] = [
     teamSize: "1 member",
     // registrationLink: "https://forms.gle/qBfu5Qwov2wrf3gd8"
   },
-  
 ];
 
 export const mobileGames: Event[] = [
