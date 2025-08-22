@@ -41,7 +41,7 @@ const EventSection = ({
     category === "technical" ? techEventIcon : nonTechEventIcon;
 
   return (
-    <section className="py-1">
+    <section className="py-1 pb-14">
       <div className="max-w-7xl mx-auto px-4 pt-10 sm:px-6 lg:px-8">
         {/* Section Header with Title and Button */}
         {showHeader && (

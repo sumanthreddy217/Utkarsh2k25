@@ -127,7 +127,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div>
-              <h3 className="text-lg font-bold mb-4 text-purple-500">
+              <h3 className="text-3xl font-bold utkarsh-title mb-4 text-purple-500">
                 UTKARSH 2025
               </h3>
               <p className="text-primary-foreground/80">
