@@ -19,6 +19,10 @@ const NonTechnicalEvents = () => {
               <hr className="my-4 border-gray-500 rounded-full" />
               
               Participants from institutes which have national importance like IITs, NITs & IIITs any where in India can reimburse one way Sleeper class fare (Indian Railways)
+
+              <hr className="my-4 border-gray-500 rounded-full" />
+
+              One way travel fare (Sleeper Class in Indian Railways) can be reimbursed by the participants from other than Andhra and Telangana states
             </p>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mt-6"></div>
 

@@ -30,7 +30,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-lg sm:text-2xl lg:text-xl max-w-2xl mx-auto drop-shadow text-gray-900">
-              A Three Day National Level Technical Fest (From 9<sup>th</sup> to 11<sup>th</sup> Sept)
+              A Three Day National Level Technical Fest <br /> 9<sup>th</sup> - 11<sup>th</sup> September
             </p>
           </div>
 

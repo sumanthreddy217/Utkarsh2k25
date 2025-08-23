@@ -45,11 +45,11 @@ const AboutFest = () => {
             Department of Information Technology <br />
             Swarnandhra College of Engineering and Technology
           </p>
-           <p className="mt-2 text-white text-lg md:text-2xl text-semibold">
+          <p className="mt-2 text-white text-lg md:text-2xl text-semibold">
             Organizing by students of
           </p>
           <p className="mt-2 text-white text-lg md:text-2xl text-semibold">
-             {""}
+            {""}
             <TypeAnimation
               sequence={departments}
               wrapper="span"
@@ -57,7 +57,6 @@ const AboutFest = () => {
               repeat={Infinity}
               className="text-purple-500 font-bold"
             />
-            
           </p>
         </div>
 
@@ -80,35 +79,41 @@ const AboutFest = () => {
         <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-xl p-8 mb-16 border border-indigo-500/20">
           <ul className="list-disc pl-6">
             <li className="text-lg text-indigo-100 mb-4">
-              <p><strong className="text-pink-300">Utkarsh 2025</strong> is a
-              Three-day celebration of creativity, competition, and community.
-              From tech brilliance to informal madness, it’s where ideas come alive.</p>
-            
-            </li>
-            
-            <li className="text-lg text-indigo-100 mb-4">
-              <p>Cash prizes (Winner & Runner), exclusive showcases, and
-              unforgettable moments await. </p>  
+              <p>
+                <strong className="text-pink-300">Utkarsh 2025</strong> is a
+                Three-day celebration of creativity, competition and community.
+                From smart tech to wild ideas, it's the place where creativity comes alive.
+              </p>
             </li>
 
             <li className="text-lg text-indigo-100 mb-4">
               <p>
-                Participants from institutes which
-                have national importance like IITs, NITs & IIITs any where in
-                India can reimburse one way Sleeper class fare (Indian Railways)
+                Cash prizes (Winner & Runner), exclusive showcases, and
+                unforgettable moments await.{" "}
               </p>
             </li>
-            
+
             <li className="text-lg text-indigo-100 mb-4">
               <p>
-                 One way travel fare (Sleeper Class in Indian Railways) can be
+                Participants from institutes which have national importance like
+                IITs, NITs & IIITs any where in India can reimburse one way
+                Sleeper class fare (Indian Railways)
+              </p>
+            </li>
+
+            <li className="text-lg text-indigo-100 mb-4">
+              <p>
+                One way travel fare (Sleeper Class in Indian Railways) can be
                 reimbursed by the participants from other than Andhra and
                 Telangana states
               </p>
             </li>
 
             <li className="text-lg text-indigo-100 mb-4">
-              <p>Food and Accommodation is Provided at free of cost for all the participants (excluding host college)</p> 
+              <p>
+                Food and Accommodation is Provided at free of cost for all the
+                participants (excluding host college)
+              </p>
             </li>
           </ul>
         </div>
@@ -166,6 +171,7 @@ const AboutFest = () => {
               items: [
                 "Chess",
                 "Sudoku",
+                "Rubic's Cube",
                 "Treasure Hunt",
                 "Photo Booth Contest",
                 "Short Film Contest",

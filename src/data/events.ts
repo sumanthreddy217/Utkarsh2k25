@@ -128,7 +128,7 @@ export const technicalEvents: Event[] = [
     id: "1.2",
     title: "Questioning Enquiry (Quiz)",
     description:
-      "The Questioning Enquiry (Quiz) is an exciting technical competition that tests participants’ knowledge through written and visual rounds.",
+      "The Questioning Enquiry (Quiz) is an exciting technical competition that tests participant's knowledge through written and visual rounds.",
     category: "technical",
     // date: "From 9th Sept",
     participants: 3,
@@ -143,7 +143,7 @@ export const technicalEvents: Event[] = [
       "Mobiles or electronic devices are not allowed.",
       "Questions are in the form of multiple choices, visuals include hardware images, logos of computer related etc.",
       "The decision of the quiz master is final and will not be subjected to any changes.",
-      "There will be total of 3 rounds. 1st and 2nd rounds will be paper tests with multiple-choice questions and, and the 3rd round will be a visual round, No negative marking.",
+      "There will be total of 3 rounds. 1st and 2nd rounds will be paper tests with multiple-choice questions and the 3rd round will be a visual round, No negative marking.",
       "For the 3rd round, the questions will be displayed on the screen, there will be buzzer provided in the room, those who know the answer should come and press the buzzer.",
       "Time limit for 1st & 2nd round is 30mintues and 1mintue for visuals.",
       "Top 8 teams will be selected for the final round.",
@@ -242,10 +242,10 @@ export const technicalEvents: Event[] = [
     prize2: "₹3,000",
     image: slideDeck,
     fullDescription:
-      "This contest provides a stage for participants to present technical topics effectively using well-structured slides and confident delivery. It encourages clear communication, technical depth, and engaging presentation style. Teams of up to 3 members must prepare 12–15 slides and deliver their presentation within 10–15 minutes. Participants should bring their own laptops. Registration will be done online through the official website.",
+      "This contest provides a stage for participants to present technical topics effectively using well-structured slides and confident delivery. It encourages clear communication, technical depth, and engaging presentation style. Team Size upto 3 members must prepare 12–15 slides and deliver their presentation within 10–15 minutes. Participants should bring their own laptops. Registration will be done online through the official website.",
     rules: [
       "Maximum number of participants are 3 members",
-      "Maximum time for a presentation is 10-15mintues, and the maximum slides required are 15 and the minimum slides are 12.",
+      "Maximum time for a presentation is 5-7 mintues, and the maximum slides required are 15 and the minimum slides are 12.",
       "Presentation topics must be related to technical.",
       "Participants should come with their own laptops.",
       " Registration will be done online through the website.",
@@ -334,7 +334,7 @@ export const technicalEvents: Event[] = [
     id: "1.6",
     title: "Extreme Results (Crazy Output)",
     description:
-      "The Extreme Output event challenges individuals to create impressive and creative program outputs within a short time frame.", // need to add
+      "The Extreme Results event challenges individuals to create impressive and creative program outputs within a short time frame.", // need to add
     category: "technical",
     // date: "From 9th Sept",
     participants: 1,
@@ -591,10 +591,10 @@ export const nonTechnicalEvents: Event[] = [
     fullDescription:
       "This event allows individuals to showcase their focus, strategy, and decision-making through competitive chess matches. It emphasizes quick thinking and proper execution of moves under time constraints.",
     rules: [
-      "This is for individual participation.",
+      "This is individual participation.",
       "The time slot for the match will be 20minutes.",
       "Castling moves should be done before checking.",
-      "If the match is not completed within the given time, the winner is considered based on who has highest points.",
+      "If the match is not completed within the given time, the winner is considered based on highest points.",
       "After completion of each match the winner from that match is going to play with the winner of the other match. This process is done till the last match.",
     ],
     themes: [],
@@ -639,8 +639,8 @@ export const nonTechnicalEvents: Event[] = [
     fullDescription:
       "This event tests participants ability to think critically and apply logic to complete a 9×9 Sudoku grid with digits 1–9. The objective is to ensure that each row, column, and block contains all numbers without repetition.",
     rules: [
-      "This is for individual participation.",
-      "Time limit to solve the puzzle will be 30mintues.",
+      "This is individual participation.",
+      "Time limit to solve the puzzle will be 30 mintues.",
       "This is a puzzle game , its objective is to fill a 9*9 grid with digits from 1 to 9. It is a number placement puzzle.",
       "Each row and column must contain the numbers from 1 to 9, without repetitions.",
       "The participants whose answer sheets match the actual answer key are declared the winners.",
@@ -736,7 +736,7 @@ export const mobileGames: Event[] = [
     prize2: "₹1,000",
     image: LUDO,
     fullDescription:
-      "This event brings excitement and strategy as players compete in two-player Ludo matches conducted online. It is designed for individual participation, with matches played directly on participants’ own mobile devices.",
+      "This event brings excitement and strategy as players compete in two-player Ludo matches conducted online. It is designed for individual participation, with matches played directly on participant’s own mobile devices.",
     rules: [
       "This event is for individual participation.",
       "It is a two-player game (only two players can play at a time).",
@@ -796,6 +796,7 @@ export const mobileGames: Event[] = [
     Note: [
       "ID card is mandatory for participation.",
       "If we find any hacks, that team will be disqualified",
+      "Participants are responsible for network and phone charging.",
     ],
     facultyCoordinator: {
       name1: "Dr. Pavan Kalyan ",

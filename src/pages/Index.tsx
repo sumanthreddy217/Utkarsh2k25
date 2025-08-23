@@ -60,7 +60,7 @@ const Index = () => {
 
             <p className="text-gray-900 mb-6 text-base sm:text-lg">
               A 24-hour national coding marathon designed to ignite creativity,
-              collaboration, and real-world problem-solving. Hosted by the
+              collaboration and real-world problem-solving. Hosted by the
               Department of IT at Swarnandhra College of Engineering and
               Technology.
             </p>
