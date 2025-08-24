@@ -1,7 +1,22 @@
 import React from "react";
-import { Calendar, Clock, MapPin, Users, DollarSign, Phone, Mail, UserCheck } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Users,
+  DollarSign,
+  Phone,
+  Mail,
+  UserCheck,
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import hackathon from "@/assets/hackathon.jpg"; // update this path as you needed
@@ -9,10 +24,10 @@ import hackathon from "@/assets/hackathon.jpg"; // update this path as you neede
 // need to set 2 googlr forms link
 
 const HackathonPage: React.FC = () => {
-
   const event = {
     title: "HACKSPRINT",
-    description: "A 24-hour National coding marthon to innovate, collaborate, and conquer real-world challenges.",
+    description:
+      "A 24-hour National coding marthon to innovate, collaborate, and conquer real-world challenges.",
     category: "technical",
     fullDescription:
       "The National Hackathon is a 24-hour coding and innovation marathon aimed at fostering creativity, problem-solving and teamwork among college students across the nation. Organized by the Department of Information Technology at Swarnandhra College of Engineering and Technology, offers a platform for students to showcase their technical skills and innovative ideas.",
@@ -30,11 +45,12 @@ const HackathonPage: React.FC = () => {
       "SpaceTech Exploration",
       "FinTech Financial Inclusion",
       "Sustainable Smart Cities",
-      "Smart Agriculture"
+      "Smart Agriculture",
     ],
     note: [
       "Eligibility: Open to all college students across India",
       "Certificates will be awarded to all participants.",
+      "Food and Accommodation will be provided for participants.",
     ],
     prize: "₹75,000",
     entryFee: "₹300 Per Head ",
@@ -44,17 +60,17 @@ const HackathonPage: React.FC = () => {
     facultycoordinator: {
       name1: "Mr. Kondaveti Raja",
       contact1: "+91 9963744490",
-      name2:"Mr. Ch R K Raju",
-      contact2:" +91 9000266299",
+      name2: "Mr. Ch R K Raju",
+      contact2: " +91 9000266299",
     },
     studentcoordinator: {
       name1: "D. Raghava",
       contact1: "+91 9059088332",
       name2: "I. Swathi",
       contact2: "+91 9347550698",
-      name3:"K. Vinay Kumar Reddy",
+      name3: "K. Vinay Kumar Reddy",
       contact3: "+91 8374936876",
-      name4:"B. Indu",
+      name4: "B. Indu",
       contact4: "+91 8247031525",
     },
     // date:  "10th Sept - 11th Sept, 2025",
@@ -65,14 +81,14 @@ const HackathonPage: React.FC = () => {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-100 via-purple-50 to-pink-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-12 mt-11">
         <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1">
             <span className="inline-block bg-blue-100 text-blue-700 font-semibold text-sm px-3 py-1 rounded-full mb-4">
               Technical
-            </span> 
+            </span>
             <h1 className="text-4xl md:text-5xl hacksprint-title bg-gradient-to-r  from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent font-extrabold dark:text-white mb-3 leading-tight ">
               {event.title}
             </h1>
@@ -81,7 +97,8 @@ const HackathonPage: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-6 text-gray-700 dark:text-gray-200 mb-8 text-lg font-medium">
               <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-blue-600" /> 10<sup>th</sup> Sept - 11<sup>th</sup> Sept, 2025
+                <Calendar className="w-5 h-5 text-blue-600" /> 10<sup>th</sup>{" "}
+                Sept - 11<sup>th</sup> Sept, 2025
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-blue-600" /> {event.time}
@@ -99,7 +116,7 @@ const HackathonPage: React.FC = () => {
             </a>
           </div>
           <div className="flex-1">
-             <img
+            <img
               src={hackathon}
               alt="Hackathon Banner"
               className="rounded-xl shadow-lg w-full h-auto object-cover"
@@ -107,7 +124,6 @@ const HackathonPage: React.FC = () => {
           </div>
         </div>
       </section>
-
 
       {/* Main Content */}
       <section className="py-12 bg-gradient-to-r from-blue-100 via-purple-50 to-pink-100 ">
@@ -194,7 +210,7 @@ const HackathonPage: React.FC = () => {
                     <div className="text-3xl font-bold text-primary mb-2">
                       {event.prize}
                     </div>
-                    
+
                     <div className="text-sm text-muted-foreground">
                       Prize Pool
                     </div>
@@ -214,7 +230,9 @@ const HackathonPage: React.FC = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <DollarSign className="h-4 w-4 text-primary" />
-                        <span className="text-sm">For Swarnandhra Students</span>
+                        <span className="text-sm">
+                          For Swarnandhra Students
+                        </span>
                       </div>
                       <span className="font-semibold">{event.note2}</span>
                     </div>
@@ -238,12 +256,20 @@ const HackathonPage: React.FC = () => {
                     </div>
                   </div>
 
-                  <Button className="w-full" variant="hero" onClick={() => window.open("https://forms.gle/yeptw6jAhVdPs2ps5 ", "_blank")}>
+                  <Button
+                    className="w-full"
+                    variant="hero"
+                    onClick={() =>
+                      window.open(
+                        "https://forms.gle/yeptw6jAhVdPs2ps5 ",
+                        "_blank"
+                      )
+                    }
+                  >
                     Register Now
                   </Button>
                 </CardContent>
               </Card>
-
 
               {/* Faculty Coordinators */}
               <Card>
@@ -279,7 +305,6 @@ const HackathonPage: React.FC = () => {
                 </CardContent>
               </Card>
 
-
               {/* Student Coordinator */}
               <Card>
                 <CardHeader>
@@ -292,7 +317,9 @@ const HackathonPage: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm">{event.studentcoordinator.contact1}</span>
+                      <span className="text-sm">
+                        {event.studentcoordinator.contact1}
+                      </span>
                     </div>
                   </div>
 
@@ -304,7 +331,9 @@ const HackathonPage: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm">{event.studentcoordinator.contact2}</span>
+                      <span className="text-sm">
+                        {event.studentcoordinator.contact2}
+                      </span>
                     </div>
                   </div>
 
@@ -316,7 +345,9 @@ const HackathonPage: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm">{event.studentcoordinator.contact3}</span>
+                      <span className="text-sm">
+                        {event.studentcoordinator.contact3}
+                      </span>
                     </div>
                   </div>
 
@@ -328,18 +359,17 @@ const HackathonPage: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm">{event.studentcoordinator.contact4}</span>
+                      <span className="text-sm">
+                        {event.studentcoordinator.contact4}
+                      </span>
                     </div>
                   </div>
-
-                
                 </CardContent>
               </Card>
             </div>
           </div>
         </div>
       </section>
-      
     </div>
   );
 };
