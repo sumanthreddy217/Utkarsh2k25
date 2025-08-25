@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import EventSection from "@/components/EventSection";
 import { technicalEvents } from "@/data/events";
-import { Separator } from "@radix-ui/react-dropdown-menu";
 
 
 const TechnicalEvents = () => {
@@ -17,6 +16,11 @@ const TechnicalEvents = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto ">
+
+              Pay now and book your slot / Registration here (Or pay on the event day – but limited slots).
+
+              <hr className="my-4 border-gray-500 rounded-full" />
+
               Cash prizes (Winner & Runner), exclusive showcases and unforgettable moments await. <br /> 
 
               <hr className="my-4 border-gray-500 rounded-full" />
@@ -25,7 +29,8 @@ const TechnicalEvents = () => {
 
               <hr className="my-4 border-gray-500 rounded-full" />
 
-              One way travel fare (Sleeper Class in Indian Railways) can be reimbursed by the participants from other than Andhra and Telangana states
+              One way travel fare (Sleeper Class in Indian Railways) can be reimbursed by the participants from other than Andhra and Telangana states.
+
               
             </p>
 

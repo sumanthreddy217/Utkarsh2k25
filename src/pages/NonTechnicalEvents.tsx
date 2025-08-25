@@ -11,9 +11,14 @@ const NonTechnicalEvents = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-              Non-Technical Events
+              Crazy Events
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto ">
+
+              Pay now and book your slot here (Or pay on the event day – but limited slots).
+
+              <hr className="my-4 border-gray-500 rounded-full" />
+              
               Cash prizes (Winner & Runner), exclusive showcases, and unforgettable moments await. <br /> 
 
               <hr className="my-4 border-gray-500 rounded-full" />

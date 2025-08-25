@@ -51,6 +51,8 @@ const HackathonPage: React.FC = () => {
       "Eligibility: Open to all college students across India",
       "Certificates will be awarded to all participants.",
       "Food and Accommodation will be provided for participants.",
+      "One way travel fare (Sleeper Class in Indian Railways) can be reimbursed by the participants from other than Andhra and Telangana states",
+      "Participants from institutes which have national importance like IITs, NITs & IIITs any where in India can reimburse one way Sleeper class fare (Indian Railways)",
     ],
     prize: "₹75,000",
     entryFee: "₹300 Per Head ",
@@ -108,7 +110,7 @@ const HackathonPage: React.FC = () => {
               </div>
             </div>
             <a
-              href="https://forms.gle/yeptw6jAhVdPs2ps5 "
+              href="https://forms.gle/3qnvpBxun4B6Pbe69"
               target="_blank"
               className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
             >
@@ -261,7 +263,7 @@ const HackathonPage: React.FC = () => {
                     variant="hero"
                     onClick={() =>
                       window.open(
-                        "https://forms.gle/yeptw6jAhVdPs2ps5 ",
+                        "https://forms.gle/3qnvpBxun4B6Pbe69",
                         "_blank"
                       )
                     }
