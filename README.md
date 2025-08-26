@@ -22,6 +22,12 @@ This project is built with:
 
 ---
 
+## 🚀 2nd Live Preview
+
+👉 [Visit the Website](https://utkarsh2k25.vercel.app/)
+
+---
+
 ## 🛠️ Tech Stack
 
 - **React.js** — Component-based architecture

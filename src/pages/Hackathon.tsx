@@ -110,7 +110,7 @@ const HackathonPage: React.FC = () => {
               </div>
             </div>
             <a
-              href="https://forms.gle/3qnvpBxun4B6Pbe69"
+              href="https://forms.gle/VPDvZSsTK39YauwS9"
               target="_blank"
               className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
             >
@@ -263,7 +263,7 @@ const HackathonPage: React.FC = () => {
                     variant="hero"
                     onClick={() =>
                       window.open(
-                        "https://forms.gle/3qnvpBxun4B6Pbe69",
+                        "https://forms.gle/VPDvZSsTK39YauwS9",
                         "_blank"
                       )
                     }
