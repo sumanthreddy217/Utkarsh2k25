@@ -67,7 +67,7 @@ const HackathonPage: React.FC = () => {
     },
     studentcoordinator: {
       name1: "D. Raghava",
-      contact1: "+91 9059088332",
+      contact1: "+91 9059088334",
       name2: "I. Swathi",
       contact2: "+91 9347550698",
       name3: "K. Vinay Kumar Reddy",
