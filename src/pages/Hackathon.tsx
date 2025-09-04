@@ -55,10 +55,10 @@ const HackathonPage: React.FC = () => {
       "Participants from institutes which have national importance like IITs, NITs & IIITs any where in India can reimburse one way Sleeper class fare (Indian Railways)",
     ],
     prize: "₹75,000",
-    entryFee: "₹300 Per Head ",
-    note2: "₹200 Per Head",
-    teamSize: "2-4 members",
-    registrationDeadline: "September 4, 2025",
+    // entryFee: "₹300 Per Head ",
+    // note2: "₹200 Per Head",
+    // teamSize: "2-4 members",
+    // registrationDeadline: "September 4, 2025",
     facultycoordinator: {
       name1: "Mr. Kondaveti Raja",
       contact1: "+91 9963744490",
@@ -109,14 +109,18 @@ const HackathonPage: React.FC = () => {
                 <MapPin className="w-5 h-5 text-blue-600" /> {event.venue}
               </div>
             </div>
-            <a
-              href="https://forms.gle/VPDvZSsTK39YauwS9"
-              target="_blank"
-              className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
-            >
-              Register Now
+            <a className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg ">
+              Registrations are Closed
             </a>
+
+            <div>
+              <p className="text-center mt-10 font-bold text-red-500 bg-gray-300 text-md rounded-sm p-5">
+                Registrations are closed as all slots have been filled. We
+                sincerely regret the inconvenience caused.
+              </p>
+            </div>
           </div>
+
           <div className="flex-1">
             <img
               src={hackathon}
@@ -220,7 +224,13 @@ const HackathonPage: React.FC = () => {
 
                   <Separator />
 
-                  <div className="space-y-3">
+                  <div>
+                    <p className="text-center font-bold text-red-500">
+                      Registrations are closed as all slots have been filled.
+                    </p>
+                  </div>
+
+                  {/* <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <DollarSign className="h-4 w-4 text-primary" />
@@ -256,9 +266,9 @@ const HackathonPage: React.FC = () => {
                         {event.registrationDeadline}
                       </span>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <Button
+                  {/* <Button
                     className="w-full"
                     variant="hero"
                     onClick={() =>
@@ -269,7 +279,7 @@ const HackathonPage: React.FC = () => {
                     }
                   >
                     Register Now
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
 
